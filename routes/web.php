@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/faca-parte', function () {
     return view('saloes.create');
 })->name('saloes.create');
+
