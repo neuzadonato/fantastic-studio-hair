@@ -37,11 +37,9 @@ class AvaliacaoController extends Controller
 
         // Preenche os campos do objeto com os dados da requisição
         $Avaliacao->nome = $requisicao->nome;
-        $Avaliacao->raca = $requisicao->raca;
-        $Avaliacao->idade = $requisicao->idade;
-        $Avaliacao->sexo = $requisicao->sexo;
-        $Avaliacao->cor = $requisicao->cor;
-        $Avaliacao->Avaliacaografia = $requisicao->Avaliacaografia;
+        $Avaliacao->email = $requisicao->email;
+        $Avaliacao->nota = $requisicao->nota;
+        $Avaliacao->mensagem = $requisicao->mensagem;
 
         // Salva o objeto no banco de dados
         $Avaliacao->save();
