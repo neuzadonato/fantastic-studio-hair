@@ -17,7 +17,7 @@ use App\Http\Controllers\SaloesController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 
 Route::get('/faca-parte', function () {
@@ -44,3 +44,6 @@ Route::put('/Saloes/{gato}', [SaloesController::class, 'update'])->name('saloes.
 // Rota que remove um gato específico do banco de dados
 Route::delete('/Saloes/{gato}', [SaloesController::class, 'destroy'])->name('saloes.destroy');
 
+Route::get('/teste', function(){
+    return view('teste');
+});
