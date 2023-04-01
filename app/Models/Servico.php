@@ -16,7 +16,8 @@ class Servico extends Model
         'barba',
         'cabelo',
         'spa',
-        'manicure/pedicure'
+        'manicurepedicure',
+        'fotos'
     ];
 }
 
