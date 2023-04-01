@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Salao;
 use Illuminate\Http\Request;
+
 
 class SaloesController extends Controller
 {
@@ -38,7 +40,7 @@ class SaloesController extends Controller
         $salao->id = $requisicao->id;
         $salao->nome = $requisicao->nome;
         $salao->endereco = $requisicao->endereco;
-        $salao->telefone = $requisicao->telefone;      
+        $salao->telefone = $requisicao->telefone;
         $salao->salaografia = $requisicao->salaografia;
 
         // Salva o objeto no banco de dados
@@ -80,7 +82,7 @@ class SaloesController extends Controller
         $salao->update($requisicao->all());
 
         // Redireciona para a página de detalhes do gato
-        return redirect()->route('saloes.show', $saloes->id);
+        return redirect()->route('saloes.show', $salao->id);
     }
 
     /**
@@ -92,7 +94,4 @@ class SaloesController extends Controller
 
         return redirect()->route('saloes.index');
     }
-}
-
-
 }
