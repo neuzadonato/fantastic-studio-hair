@@ -47,7 +47,7 @@ Route::get('/faca-parte', function () {
     return view('saloes.create');
 })->name('saloes.create');
 
-<<<<<<< HEAD
+
 Route::get('/usuario', function () {
     return view('usuarios.create');
 })->name('usuarios.create');
@@ -66,7 +66,7 @@ Route::put('/usuarios/{usuario}', [UsuariosController::class, 'update'])->name('
 
 Route::delete('/usuarios/{usuario}', [UsuariosController::class, 'destroy'])->name('usuarios.destroy');
 
-=======
+
 Route::get('/saloes', [SaloesController::class, 'index'])->name('saloes.index');
 
 // Rota para o formulário de criação de Saloes
@@ -78,16 +78,16 @@ Route::get('/salao/{salao}', [SaloesController::class, 'show'])->name('saloes.sh
 // Rota para o formulário de edição de saloes
 Route::get('/saloes/{salao}/editar', [SaloesController::class, 'edit'])->name('saloes.edit');
 
-// Rota que armazena um novo gato no banco de dados
+// Rota que armazena um novo salão no banco de dados
 Route::post('/saloes', [SaloesController::class, 'store'])->name('saloes.store');
 
-// Rota que atualiza um gato específico no banco de dados
-Route::put('/Saloes/{gato}', [SaloesController::class, 'update'])->name('saloes.update');
+// Rota que atualiza um salão específico no banco de dados
+Route::put('/Saloes/{salao}', [SaloesController::class, 'update'])->name('saloes.update');
 
-// Rota que remove um gato específico do banco de dados
-Route::delete('/Saloes/{gato}', [SaloesController::class, 'destroy'])->name('saloes.destroy');
+// Rota que remove um salão específico do banco de dados
+Route::delete('/Saloes/{salao}', [SaloesController::class, 'destroy'])->name('saloes.destroy');
 
 Route::get('/teste', function(){
     return view('teste');
 });
->>>>>>> 8a629566486a6992913a3294d6e5b89ff5c90bfe
+
