@@ -25,11 +25,11 @@ public function store(Request $requisicao)
 {
     $servico = new Servico();
 
-    $servico->nome = $requisicao->titulo;
-        $servico->raca = $requisicao->valor;
-        $servico->idade = $requisicao->descricao;
-        $servico->sexo = $requisicao->barba;
-        $servico->cor = $requisicao->cabelo;
+    $servico->nome= $requisicao->nome;
+        $servico->valor = $requisicao->valor;
+        $servico->descricao = $requisicao->descricao;
+        $servico->barba = $requisicao->barba;
+        $servico->cabelo = $requisicao->cabelo;
         $servico->spa = $requisicao->spa;
         $servico->manicurepedicure = $requisicao->manicurepedicure ;
         $servico->fotos = $requisicao->fotos ;
@@ -71,7 +71,4 @@ public function destroy(servico $servico)
     return redirect()->route('servicos.index');
 }
 }
-
-
-
 
