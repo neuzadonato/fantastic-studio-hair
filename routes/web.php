@@ -91,3 +91,29 @@ Route::get('/teste', function(){
     return view('teste');
 });
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Rotas para o CRUD de gatos
+
+// Rota para a listagem de gatos
+Route::get('/servicos', [ServicosController::class, 'index'])->name('servicos.index');
+
+// Rota para o formulário de criação de gatos
+Route::get('/servicos/novo', [ServicosController::class, 'create'])->name('servicos.create');
+
+// Rota para o mostrar um gato específico
+Route::get('/servicos/{servico}', [ServicosController::class, 'show'])->name('servicos.show');
+
+// Rota para o formulário de edição de gatos
+Route::get('/servicos/{servico}/editar', [ServicosController::class, 'edit'])->name('servicos.edit');
+
+// Rota que armazena um novo gato no banco de dados
+Route::post('/servicos', [ServicosController::class, 'store'])->name('servicos.store');
+
+// Rota que atualiza um gato específico no banco de dados
+Route::put('/servicos/{servico}', [ServicosController::class, 'update'])->name('servicos.update');
+
+// Rota que remove um gato específico do banco de dados
+Route::delete('/servicos/{servico}', [ServicosController::class, 'destroy'])->name('servicos.destroy');
