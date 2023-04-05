@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('razao_social');
+            $table->integer('email');
             $table->integer('endereco');
             $table->string('telefone');
             $table->text('salaografia');
