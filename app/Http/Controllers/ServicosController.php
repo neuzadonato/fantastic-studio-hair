@@ -25,7 +25,7 @@ public function store(Request $requisicao)
 {
     $servico = new Servico();
 
-    $servico->nome= $requisicao->nome;
+    $servico->titulo= $requisicao->titulo;
         $servico->valor = $requisicao->valor;
         $servico->descricao = $requisicao->descricao;
         $servico->barba = $requisicao->barba;
