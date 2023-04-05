@@ -92,7 +92,7 @@ Route::get('/teste', function(){
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home');
 });
 
 // Rotas para o CRUD de gatos
