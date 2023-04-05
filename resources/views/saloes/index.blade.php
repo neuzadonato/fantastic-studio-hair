@@ -29,6 +29,8 @@
                     <tr>
                         <td>{{ $salao->id}}</td>
                         <td>{{ $salao->nome }}</td>
+                        <td>{{ $salao->razao_social }}</td>
+                        <td>{{ $salao->email }}</td>
                         <td>{{ $salao->endereco }}</td>
                         <td>{{ $salao->telefone }}</td>
                         <td>{{ $salao->salaogragfia }}</td>

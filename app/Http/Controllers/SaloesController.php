@@ -39,6 +39,8 @@ class SaloesController extends Controller
         // Preenche os campos do objeto com os dados da requisição
         $salao->id = $requisicao->id;
         $salao->nome = $requisicao->nome;
+        $salao->razao_social = $requisicao->razao_social;
+        $salao->email = $requisicao->email;
         $salao->endereco = $requisicao->endereco;
         $salao->telefone = $requisicao->telefone;
         $salao->salaografia = $requisicao->salaografia;

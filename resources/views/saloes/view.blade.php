@@ -11,7 +11,8 @@
     <body>
         <div class="container">
             <h1>{{ $salao->id }} - {{ $salao->nome }}</h1>
-
+            <h2>{{ $salao->razao_social }}</h2>
+            <h2>{{ $salao->email }}</h2>
             <h2>{{ $salao->endereco }}</h2>
 
             <h3>{{ $salao->telefone }}</h3>
