@@ -12,7 +12,7 @@
         <div class="container">
             <h1>Lista de Avaliações</h1>
 
-            <a class="btn btn-outline-success my-2" href="{{ route('avaliacao.create') }}">Nova Avaliação</a>
+            <a class="btn btn-outline-success my-2" href="{{ route('avaliacoes.create') }}">Nova Avaliação</a>
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
@@ -23,7 +23,7 @@
                     <th></th>
                 </tr>
 
-                @foreach ($avaliacoes as $avaliacao)
+                @foreach ($Avaliacoes as $avaliacao)
                     <tr>
                         <td>{{ $avaliacao->nome }}</td>
                         <td>{{ $avaliacao->email }}</td>

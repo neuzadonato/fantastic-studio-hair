@@ -16,9 +16,7 @@
 
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home') }}">
-            Agende conosco!!
-        </a>
+
 
         <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Login</a>
 
@@ -54,7 +52,7 @@
                 </li>
             </ul>
 
-            <a href="{{ route('saloes.create') }}" class="btn custom-btn d-lg-block d-none">Cadastro</a>
+           <a href="{{ route('saloes.create') }}" class="btn custom-btn d-lg-block d-none">Cadastro</a>
         </div>
     </div>
 </nav>

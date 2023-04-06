@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('cabelo');
             $table->string('spa');
             $table->string('manicurepedicure');
-            $table->image('fotos')->nullable()->default('');
+            $table->string('fotos')->nullable()->default('');
             $table->timestamps();
         });
     }

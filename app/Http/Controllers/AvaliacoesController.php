@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Avaliacao;
+use App\Models\Avaliacoes;
 use Illuminate\Http\Request;
 
-class AvaliacaoController extends Controller
+class AvaliacoesController extends Controller
 {
     /**
      * Lista todos os Avaliacoes cadastrados
@@ -13,7 +13,7 @@ class AvaliacaoController extends Controller
     public function index()
     {
         // Pega todos os registos da tabela relacionada ao modelo Avaliacao
-        $Avaliacoes = Avaliacao::all();
+        $Avaliacoes = Avaliacoes::all();
 
         // Manda os dados para uma view, no caso Avaliacoes.index
         return view('Avaliacoes.index', compact('Avaliacoes'));
@@ -24,7 +24,7 @@ class AvaliacaoController extends Controller
      */
     public function create()
     {
-        return view('Avaliacoes.create');
+        return view('avaliacoes.create');
     }
 
     /**
@@ -33,7 +33,7 @@ class AvaliacaoController extends Controller
     public function store(Request $requisicao)
     {
         // Cria um novo objeto do tipo Avaliacao em branco
-        $Avaliacao = new Avaliacao();
+        $Avaliacao = new Avaliacoes();
 
         // Preenche os campos do objeto com os dados da requisição
         $Avaliacao->nome = $requisicao->nome;
@@ -56,7 +56,7 @@ class AvaliacaoController extends Controller
      * está na rota. O Laravel faz a busca no banco de dados e retorna o objeto
      * que corresponde ao id passado na rota.
      */
-    public function show(Avaliacao $Avaliacao)
+    public function show(Avaliacoes $Avaliacao)
     {
         // Retorna a view Avaliacoes.view com o objeto $Avaliacao
         return view('Avaliacoes.view', compact('Avaliacao'));
@@ -65,7 +65,7 @@ class AvaliacaoController extends Controller
     /**
      * Mostra o formulário para editar um Avaliacao específico
      */
-    public function edit(Avaliacao $Avaliacao)
+    public function edit(Avaliacoes $Avaliacao)
     {
         // Retorna a view Avaliacoes.edit com o objeto $Avaliacao
         return view('Avaliacoes.edit', compact('Avaliacao'));
@@ -74,7 +74,7 @@ class AvaliacaoController extends Controller
     /**
      * Atualiza um Avaliacao específico
      */
-    public function update(Request $requisicao, Avaliacao $Avaliacao)
+    public function update(Request $requisicao, Avaliacoes $Avaliacao)
     {
         // Atualiza o objeto com os dados da requisição
         $Avaliacao->update($requisicao->all());
@@ -86,7 +86,7 @@ class AvaliacaoController extends Controller
     /**
      * Remove um Avaliacao específico
      */
-    public function destroy(Avaliacao $Avaliacao)
+    public function destroy(Avaliacoes $Avaliacao)
     {
         $Avaliacao->delete();
 
