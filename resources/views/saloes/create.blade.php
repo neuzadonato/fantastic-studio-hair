@@ -69,7 +69,7 @@
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="foto" name="ticket-form-email" id="ticket-form-email"
+                                <input type="image" name="ticket-form-email" id="ticket-form-email"
                                     pattern="[^ @]*@[^ @]*" class="form-control" placeholder="foto" required>
                             </div>
 
