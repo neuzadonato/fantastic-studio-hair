@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaloesController;
-
 use App\Http\Controllers\AvaliacoesController;
+use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\ServicosController;
+
 
 /*
 |--------------------------------------------------------------------------
