@@ -43,7 +43,7 @@
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="razao-social" name="ticket-form-email" id="ticket-form-email"
+                                    <input type="text" name="ticket-form-email" id="ticket-form-email"
                                         pattern="[^ @]*@[^ @]*" class="form-control" placeholder="razao_social" required>
                                 </div>
 
@@ -54,17 +54,17 @@
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="endereco" name="ticket-form-email" id="ticket-form-email"
+                                <input type="text" name="ticket-form-email" id="ticket-form-email"
                                     pattern="[^ @]*@[^ @]*" class="form-control" placeholder="endereco" required>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control"
+                                <input type="number" name="ticket-form-name" id="ticket-form-name" class="form-control"
                                     placeholder="Telefone" required>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="salaografia" name="ticket-form-email" id="ticket-form-email"
+                                <input type="text" name="ticket-form-email" id="ticket-form-email"
                                     pattern="[^ @]*@[^ @]*" class="form-control" placeholder="salaografia" required>
                             </div>
 
