@@ -12,7 +12,7 @@
         <div class="container">
             <h1>Lista de Serviços</h1>
 
-            <a class="btn btn-outline-success my-2" href="{{ route('servico.create') }}">Novo Serviços</a>
+            <a class="btn btn-outline-success my-2" href="{{ route('servicos.create') }}">Novo Serviços</a>
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
