@@ -11,12 +11,12 @@ class UsuariosController extends Controller
     {
         $usuario = Usuario::all();
 
-        return view('usuario.index', compact('usuario'));
+        return view('usuarios.index', compact('usuario'));
     }
 
     public function create()
     {
-        return view('usuario.create');
+        return view('usuarios.create');
     }
 
     public function store(Request $requisicao)

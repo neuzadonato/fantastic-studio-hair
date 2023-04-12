@@ -17,13 +17,13 @@
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
                     <th>Nome</th>
-                    <th>Telfone</th>
+                    <th>Telefone</th>
                     <th>Email</th>
                     <th>Endereço</th>
                     <th>Salão</th>
                 </tr>
 
-                @foreach ($usuarios as $usuario)
+                @foreach ($usuario as $usuario)
                     <tr>
                         <td>{{ $usuario->nome }}</td>
                         <td>{{ $usuario->telefone }}</td>
