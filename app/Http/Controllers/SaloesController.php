@@ -37,13 +37,15 @@ class SaloesController extends Controller
         $salao = new Salao();
 
         // Preenche os campos do objeto com os dados da requisição
-        $salao->id = $requisicao->id;
         $salao->nome = $requisicao->nome;
         $salao->razao_social = $requisicao->razao_social;
         $salao->email = $requisicao->email;
         $salao->endereco = $requisicao->endereco;
         $salao->telefone = $requisicao->telefone;
         $salao->salaografia = $requisicao->salaografia;
+        $salao->foto = $requisicao->foto;
+        $salao->senha = $requisicao->senha;
+        $salao->confirmar_senha = $requisicao->confirmar_senha;
 
         // Salva o objeto no banco de dados
         $salao->save();

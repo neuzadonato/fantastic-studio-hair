@@ -37,14 +37,14 @@
 
                         <div class="ticket-form-body">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control"
                                         placeholder="Nome" required>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="ticket-form-email" id="ticket-form-email"
-                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="razao_social" required>
+                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Razão Social" required>
                                 </div>
 
                                 <div class="col-lg-15 col-md-15 col-12">
@@ -55,7 +55,7 @@
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="ticket-form-email" id="ticket-form-email"
-                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="endereco" required>
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Endereço" required>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
@@ -65,12 +65,12 @@
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="ticket-form-email" id="ticket-form-email"
-                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="salaografia" required>
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Salaografia" required>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="image" name="ticket-form-email" id="ticket-form-email"
-                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="foto" required>
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Foto" required>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">

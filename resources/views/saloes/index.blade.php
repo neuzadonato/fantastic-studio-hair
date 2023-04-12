@@ -16,18 +16,20 @@
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
-                    <th>id</th>
                     <th>nome</th>
+                    <th>razao_social</th>
+                    <th>email</th>
                     <th>endereco</th>
                     <th>telefone</th>
                     <th>salaografia</th>
                     <th>foto</th>
+                    <th>senha</th>
+                    <th>confirmar_senha</th>
                     <th></th>
                 </tr>
 
                 @foreach ($saloes as $salao)
                     <tr>
-                        <td>{{ $salao->id}}</td>
                         <td>{{ $salao->nome }}</td>
                         <td>{{ $salao->razao_social }}</td>
                         <td>{{ $salao->email }}</td>
@@ -35,6 +37,8 @@
                         <td>{{ $salao->telefone }}</td>
                         <td>{{ $salao->salaogragfia }}</td>
                         <td>{{ $salao->foto }}</td>
+                        <td>{{ $salao->senha }}</td>
+                        <td>{{ $salao->confirmar_senha }}</td>
 
                         <td>
                             <a class="link" href="{{ route('saloes.show', $salao->id) }}">

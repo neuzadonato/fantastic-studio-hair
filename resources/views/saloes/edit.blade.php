@@ -22,8 +22,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label>Telefone</label>
-                    <input type="text" name="telefone" class="form-control" value="{{ $salao->telefone }}">
+                    <label>Razão Social</label>
+                    <input type="text" name="razao_social" class="form-control" value="{{ $salao->razao_social }}">
                 </div>
 
                 <div class="mb-3">
@@ -34,6 +34,31 @@
                 <div class="mb-3">
                     <label>Endereço</label>
                     <input type="text" name="endereco" class="form-control" value="{{ $salao->endereco }}">
+                </div>
+
+                <div class="mb-3">
+                    <label>Telefone</label>
+                    <input type="text" name="telefone" class="form-control" value="{{ $salao->telefone }}">
+                </div>
+
+                <div class="mb-3">
+                    <label>Salaografia</label>
+                    <input type="text" name="salaogragrafia" class="form-control" value="{{ $salao->salaografia }}">
+                </div>
+
+                <div class="mb-3">
+                    <label>Foto</label>
+                    <input type="image" name="foto" class="form-control" value="{{ $salao->foto }}">
+                </div>
+
+                <div class="mb-3">
+                    <label>Senha</label>
+                    <input type="text" name="senha" class="form-control" value="{{ $salao->senha }}">
+                </div>
+
+                <div class="mb-3">
+                    <label>Confirmar Senha</label>
+                    <input type="text" name="confirmar_senha" class="form-control" value="{{ $salao->confirmar_senha }}">
                 </div>
 
                 <div class="mb-3">
