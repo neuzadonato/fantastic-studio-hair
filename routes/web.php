@@ -4,7 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaloesController;
 
 use App\Http\Controllers\AvaliacoesController;
+<<<<<<< HEAD
 use App\Http\Controllers\UsuariosController;
+=======
+use App\Http\Controllers\ServicosController;
+>>>>>>> 42d8506ad896f0068f05f9c364d5e628c6159659
 
 /*
 |--------------------------------------------------------------------------

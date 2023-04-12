@@ -11,15 +11,15 @@ class ServicosController extends Controller
 
 {
 
-    $gatos = servico::all();
+    $servicos = servico::all();
 
-    return view('servico.index', compact('servicos'));
+    return view('servicos.index', compact('servicos'));
 
 }
 
 public function create()
 {
-    return view('servico.create');
+    return view('servicos.create');
 }
 public function store(Request $requisicao)
 {
@@ -34,7 +34,7 @@ public function store(Request $requisicao)
         $servico->manicurepedicure = $requisicao->manicurepedicure ;
         $servico->fotos = $requisicao->fotos ;
         $servico->save();
-        return redirect()->route('servico.show', $servico->id);
+        return redirect()->route('servicos.show', $servico->id);
 
 }
 public function show(Servico $Servico)

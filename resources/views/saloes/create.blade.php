@@ -39,66 +39,49 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control"
-                                        placeholder="Nome Fantasia" required>
+                                        placeholder="Nome" required>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="ticket-form-email" id="ticket-form-email"
+                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="razao_social" required>
+                                </div>
+
+                                <div class="col-lg-15 col-md-15 col-12">
                                     <input type="email" name="ticket-form-email" id="ticket-form-email"
                                         pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
                                 </div>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control"
+                                <input type="text" name="ticket-form-email" id="ticket-form-email"
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="endereco" required>
+                            </div>
+
+                            <div class="col-lg-15 col-md-15 col-12">
+                                <input type="number" name="ticket-form-name" id="ticket-form-name" class="form-control"
                                     placeholder="Telefone" required>
                             </div>
 
-                            <h6>Selecione uma opção:</h6>
-
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-check form-control">
-                                        <input class="form-check-input" type="radio" name="TicketForm"
-                                            id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Salão Feminino
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-check form-check-radio form-control">
-                                        <input class="form-check-input" type="radio" name="TicketForm"
-                                            id="flexRadioDefault2">
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Salão Masculino
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-check form-check-radio form-control">
-                                        <input class="form-check-input" type="radio" name="TicketForm"
-                                            id="flexRadioDefault2">
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Salão Unisex
-                                        </label>
-                                    </div>
-                                </div>
+                            <div class="col-lg-15 col-md-15 col-12">
+                                <input type="text" name="ticket-form-email" id="ticket-form-email"
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="salaografia" required>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12"></div>
-                            <input type="text" name="ticket-form-number" id="ticket-form-number" class="form-control"
-                                placeholder="Razão Social" required>
 
-                            <div class="col-lg-6 col-md-6 col-12">
+                            <div class="col-lg-15 col-md-15 col-12">
+                                <input type="image" name="ticket-form-email" id="ticket-form-email"
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="foto" required>
+                            </div>
+
+                            <div class="col-lg-15 col-md-15 col-12">
                                 <input type="password" name="senha" id="senha" class="form-control"
                                     placeholder="Senha" required>
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-12">
+                            <div class="col-lg-15 col-md-15 col-12">
                                 <input type="password" name="" id="ConfirmarSenha" class="form-control"
                                     placeholder="Confirmar Senha" required>
                             </div>
-
 
                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                 <button type="submit" class="form-control">Salvar</button>
