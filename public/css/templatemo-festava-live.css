@@ -8,7 +8,7 @@ https://templatemo.com/tm-583-festava-live
 
 
 /*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
+  CUSTOM PROPERTIES ( VARIABLES )
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
@@ -45,12 +45,12 @@ https://templatemo.com/tm-583-festava-live
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
 
 
 /*---------------------------------------
-  TYPOGRAPHY               
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h2,
@@ -106,7 +106,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -210,7 +210,7 @@ strong {
 
 
 /*---------------------------------------
-  SECTION               
+  SECTION
 -----------------------------------------*/
 .section-padding {
   padding-top: 100px;
@@ -260,9 +260,9 @@ strong {
   margin-right: 15px;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
@@ -270,19 +270,19 @@ strong {
 }
 
 .nav-tabs h5 {
-  color: var(--p-color); 
+  color: var(--p-color);
   margin-bottom: 0;
 }
 
 .nav-tabs .nav-link.active h5,
-.nav-tabs .nav-link:focus h5, 
+.nav-tabs .nav-link:focus h5,
 .nav-tabs .nav-link:hover h5 {
   color: var(--primary-color);
 }
 
 
 /*---------------------------------------
-  CUSTOM ICON COLOR               
+  CUSTOM ICON COLOR
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
@@ -290,7 +290,7 @@ strong {
 
 
 /*---------------------------------------
-  CUSTOM BUTTON               
+  CUSTOM BUTTON
 -----------------------------------------*/
 .custom-btn {
   background: var(--custom-btn-bg-color);
@@ -329,7 +329,7 @@ strong {
 
 
 /*---------------------------------------
-  VIDEO              
+  VIDEO
 -----------------------------------------*/
 .video-wrap {
   z-index: -100;
@@ -346,7 +346,7 @@ strong {
 
 
 /*---------------------------------------
-  SITE HEADER              
+  SITE HEADER
 -----------------------------------------*/
 .site-header {
   background-color: var(--primary-color);
@@ -356,7 +356,7 @@ strong {
 
 
 /*---------------------------------------
-  NAVIGATION              
+  NAVIGATION
 -----------------------------------------*/
 .sticky-wrapper {
   position: absolute;
@@ -398,7 +398,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--secondary-color);
 }
@@ -471,7 +471,7 @@ strong {
 
 
 /*---------------------------------------
-  HERO        
+  HERO
 -----------------------------------------*/
 .hero-section {
   position: relative;
@@ -503,10 +503,10 @@ strong {
 
 
 /*---------------------------------------
-  ABOUT              
+  ABOUT
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
+  background-image: url('../images/a.avif');
   background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,10 +548,10 @@ strong {
 
 
 /*---------------------------------------
-  TICKET               
+  TICKET
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url('../images/a.avif');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -584,7 +584,7 @@ strong {
 
 
 /*---------------------------------------
-  ARTISTS              
+  ARTISTS
 -----------------------------------------*/
 .artists-thumb {
   position: relative;
@@ -641,7 +641,7 @@ strong {
 
 
 /*---------------------------------------
-  SCHEDULE              
+  SCHEDULE
 -----------------------------------------*/
 .schedule-section {
   background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
@@ -722,7 +722,7 @@ strong {
 
 
 /*---------------------------------------
-  PRICING              
+  PRICING
 -----------------------------------------*/
 .pricing-thumb {
   border: 5px dotted var(--dark-color);
@@ -781,7 +781,7 @@ strong {
 
 
 /*---------------------------------------
-  CONTACT               
+  CONTACT
 -----------------------------------------*/
 .google-map {
   border-radius: var(--border-radius-medium);
@@ -789,7 +789,7 @@ strong {
 
 
 /*---------------------------------------
-  CUSTOM FORM               
+  CUSTOM FORM
 -----------------------------------------*/
 .custom-form .form-control {
   color: var(--p-color);
@@ -818,7 +818,7 @@ strong {
 
 
 /*---------------------------------------
-  SITE FOOTER              
+  SITE FOOTER
 -----------------------------------------*/
 .site-footer {
   background-color: var(--dark-color);
@@ -842,7 +842,7 @@ strong {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .site-footer-link,
@@ -866,7 +866,7 @@ strong {
 
 
 /*---------------------------------------
-  SOCIAL ICON               
+  SOCIAL ICON
 -----------------------------------------*/
 .social-icon {
   margin: 0;
@@ -917,7 +917,7 @@ strong {
 
 
 /*---------------------------------------
-  RESPONSIVE STYLES               
+  RESPONSIVE STYLES
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   h1 {
@@ -948,7 +948,7 @@ strong {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--dark-color);
   }
@@ -977,7 +977,7 @@ strong {
     padding: 20px;
   }
 
-  .schedule-table tr, 
+  .schedule-table tr,
   .schedule-table td {
     padding: 25px;
   }

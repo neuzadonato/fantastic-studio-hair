@@ -19,20 +19,8 @@
 
             <div class="col-lg-6 col-12">
                 <div class="about-text-wrap">
-                    <img src="{{ asset('images/pexels-alexander-suhorucov-6457579.jpg') }}" class="about-image img-fluid">
+                    <img src="{{ asset('images/guararapes entrada.jpg') }}" class="about-image img-fluid">
 
-                    <div class="about-text-info d-flex">
-                        <div class="d-flex">
-                            <i class="about-text-icon bi-person"></i>
-                        </div>
-
-
-                        <div class="ms-4">
-                            <h3>a happy moment</h3>
-
-                            <p class="mb-0">your amazing festival experience with us</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -52,7 +52,7 @@
 
                 <div class="mb-3">
                     <label>Fotos</label>
-                    <input type= image name="fotos" class="form-control">
+                    <input type= "image"name="fotos" class="form-control">
                 </div>
 
                 <div>
