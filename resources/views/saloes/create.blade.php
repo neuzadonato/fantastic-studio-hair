@@ -79,7 +79,7 @@
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="password" name="" id="ConfirmarSenha" class="form-control"
+                                <input type="password" name="confirmarsenha" id="ConfirmarSenha" class="form-control"
                                     placeholder="Confirmar Senha" required>
                             </div>
 
