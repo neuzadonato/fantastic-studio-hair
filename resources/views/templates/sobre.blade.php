@@ -11,9 +11,9 @@
                         que desenvolvemos o TCC na modalidade de um site, para fins de facilitar agendamentos de
                         salões de beleza entre o cliente e a empresa.</p>
 
-                    <h6 class="text-white mt-4">Whole Night Party</h6>
+                    <h6 class="text-white mt-4">Você em dia com sua beleza</h6>
 
-                    <p class="text-white">Please tell your friends about our website. Thank you.</p>
+                    <p class="text-white">Por favor, conte a seus amigos sobre o nosso site.</p>
                 </div>
             </div>
 
