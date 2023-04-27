@@ -40,7 +40,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_4">Schedule</a>
+                    <a class="nav-link click-scroll" href="#section_4">Avaliações</a>
                 </li>
 
                 <li class="nav-item">
