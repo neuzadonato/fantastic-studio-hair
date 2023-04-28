@@ -33,6 +33,12 @@ class SaloesController extends Controller
      */
     public function store(Request $requisicao)
     {
+        // Valida os dados do salão
+        $requisicao->validate([
+            'nome' => 'required|string',
+            'razao_social' => 'nullable|string'
+        ]);
+
         // Cria um novo objeto do tipo Salao em branco
         $salao = new Salao();
 
@@ -44,8 +50,6 @@ class SaloesController extends Controller
         $salao->telefone = $requisicao->telefone;
         $salao->salaografia = $requisicao->salaografia;
         $salao->foto = $requisicao->foto;
-        $salao->senha = $requisicao->senha;
-        $salao->confirmar_senha = $requisicao->confirmar_senha;
 
         // Salva o objeto no banco de dados
         $salao->save();
@@ -65,7 +69,7 @@ class SaloesController extends Controller
     public function show(Salao $salao)
     {
         // Retorna a view gatos.view com o objeto $salao
-        return view('salao.view', compact('salao'));
+        return view('saloes.view', compact('salao'));
     }
 
     /**
