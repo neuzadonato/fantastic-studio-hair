@@ -8,7 +8,7 @@
             <div class="row">
 
                 <div class="col-lg-6 col-10 mx-auto">
-                    <form class="custom-form ticket-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                    <form class="custom-form ticket-form mb-5 mb-lg-0" action="{{ route('usuarios.store') }}" method="post" role="form">
                         <h2 class="text-center mb-4">Cadastro</h2>
 
                         <script>
@@ -38,7 +38,7 @@
                         <div class="ticket-form-body">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control"
+                                    <input type="text" name="nome" id="ticket-form-name" class="form-control"
                                         placeholder="Nome" required>
                                 </div>
 
@@ -49,12 +49,12 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-12">
-                                <input type="endereco" name="ticket-form-email" id="ticket-form-endereco"
-                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="endereco" required>
+                                <input type="text" name="ticket-form-endereco" id="ticket-form-endereco"
+                                    class="form-control" placeholder="endereco" required>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="text" name="ticket-form-textr" id="ticket-form-text" class="form-control"
+                                <input type="text" name="ticket-form-text" id="ticket-form-text" class="form-control"
                                     placeholder="Telefone" required>
                             </div>
 
