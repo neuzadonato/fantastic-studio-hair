@@ -17,7 +17,7 @@
             <h3>endereço {{ $usuario->endereco }}</h3>
 
             <p>
-                {{ $usuario>salao }}
+                {{ $usuario->email }}
             </p>
 
             <a class="btn btn-light" href="{{ route('usuarios.index') }}">Voltar a lista</a>

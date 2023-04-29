@@ -9,6 +9,8 @@
 
                 <div class="col-lg-6 col-10 mx-auto">
                     <form class="custom-form ticket-form mb-5 mb-lg-0" action="{{ route('usuarios.store') }}" method="post" role="form">
+                        @csrf
+
                         <h2 class="text-center mb-4">Cadastro</h2>
 
                         <script>
@@ -38,27 +40,27 @@
                         <div class="ticket-form-body">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="nome" id="ticket-form-name" class="form-control"
+                                    <input type="text" name="nome" id="nome" class="form-control"
                                         placeholder="Nome" required>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="email" name="ticket-form-email" id="ticket-form-email"
+                                    <input type="email" name="email" id="email"
                                         pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
                                 </div>
-                            </div>
 
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <input type="text" name="ticket-form-endereco" id="ticket-form-endereco"
-                                    class="form-control" placeholder="endereco" required>
-                            </div>
 
-                            <div class="col-lg-15 col-md-15 col-12">
-                                <input type="text" name="ticket-form-text" id="ticket-form-text" class="form-control"
-                                    placeholder="Telefone" required>
-                            </div>
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <input type="text" name="endereco" id="endereco"
+                                        class="form-control" placeholder="endereco" required>
+                                </div>
 
-                            <h6>Selecione uma opção:</h6>
+                                <div class="col-lg-15 col-md-15 col-12">
+                                    <input type="text" name="telefone" id="telefone" class="form-control"
+                                        placeholder="Telefone" required>
+                                </div>
+
+                            {{-- <h6>Selecione uma opção:</h6>
 
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -89,21 +91,22 @@
                                         </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <input type="password" name="senha" id="senha" class="form-control"
-                                    placeholder="Senha" required>
-                            </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <input type="password" name="senha" id="senha" class="form-control"
+                                        placeholder="Senha" required>
+                                </div>
 
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <input type="password" name="" id="ConfirmarSenha" class="form-control"
-                                    placeholder="Confirmar Senha" required>
-                            </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <input type="password" name="senha_confirmation" id="ConfirmarSenha" class="form-control"
+                                        placeholder="Confirmar Senha" required>
+                                </div>
 
 
-                            <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                <button type="submit" class="form-control">Salvar</button>
+                                <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                    <button type="submit" class="form-control">Salvar</button>
+                                </div>
                             </div>
                         </div>
                     </form>
