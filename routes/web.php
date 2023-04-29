@@ -50,10 +50,6 @@ Route::get('/faca-parte', function () {
 })->name('saloes.create');
 
 
-Route::get('/usuario', function () {
-    return view('usuarios.create');
-})->name('usuarios.create');
-
 Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios.index');
 
 Route::get('/usuarios/novo', [UsuariosController::class, 'create'])->name('usuarios.create');

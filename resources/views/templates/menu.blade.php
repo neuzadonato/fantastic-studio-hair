@@ -52,7 +52,7 @@
                 </li>
             </ul>
 
-           <a href="{{ route('saloes.create') }}" class="btn custom-btn d-lg-block d-none">Cadastro</a>
+           <a href="{{ route('usuarios.create') }}" class="btn custom-btn d-lg-block d-none">Cadastro</a>
         </div>
     </div>
 </nav>
