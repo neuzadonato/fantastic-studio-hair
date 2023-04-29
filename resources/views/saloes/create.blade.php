@@ -51,32 +51,54 @@
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="razao_social" id="razao_social"
                                         class="form-control" placeholder="Razão Social" required>
+
+                                        @error('razao_social')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
 
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="email" name="email" id="email"
-                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
+                                        pattern="[^ @]*@[^ @]*" class="form-control"
+                                        placeholder="Email" required>
+
+                                    @error('email')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="endereco" id="endereco"
                                    class="form-control" placeholder="Endereço" required>
+
+                                 @error('endereco')
+                                   <div class="alert alert-danger">{{ $message }}</div>
+                               @enderror
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="number" name="telefone" id="telefone" class="form-control"
                                     placeholder="Telefone" required>
+
+                                 @error('telefone')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="salaografia" id="salaografia"
                                     class="form-control" placeholder="Salaografia" required>
+
+                                    @error('salaografia')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="image" name="foto" id="foto"
                                     class="form-control" placeholder="Foto" required>
+
                             </div>
 
                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
