@@ -41,7 +41,7 @@
                             <div class="row">
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="nome" id="name" class="form-control"
-                                        placeholder="Nome" required>
+                                        placeholder="Nome" required value="{{ old('nome') }}">
 
                                     @error('nome')
                                         <div class="alert alert-danger">{{ $message }}</div>
@@ -50,7 +50,7 @@
 
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="razao_social" id="razao_social"
-                                        class="form-control" placeholder="Razão Social" required>
+                                        class="form-control" placeholder="Razão Social" requiredvalue="{{ old('razao_social') }}"> >
 
                                         @error('razao_social')
                                         <div class="alert alert-danger">{{ $message }}</div>
@@ -60,7 +60,7 @@
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="email" name="email" id="email"
                                         pattern="[^ @]*@[^ @]*" class="form-control"
-                                        placeholder="Email" required>
+                                        placeholder="Email" required value="{{ old('email') }}">
 
                                     @error('email')
                                         <div class="alert alert-danger">{{ $message }}</div>
@@ -70,7 +70,7 @@
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="endereco" id="endereco"
-                                   class="form-control" placeholder="Endereço" required>
+                                   class="form-control" placeholder="Endereço" required value="{{ old('endereco') }}">
 
                                  @error('endereco')
                                    <div class="alert alert-danger">{{ $message }}</div>
@@ -78,8 +78,8 @@
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="string" name="telefone" id="telefone" class="form-control"
-                                    placeholder="Telefone" required>
+                                <input type="text" name="telefone" id="telefone" class="form-control"
+                                    placeholder="Telefone" required value="{{ old('telefone') }}">
 
                                  @error('telefone')
                                         <div class="alert alert-danger">{{ $message }}</div>
@@ -88,7 +88,7 @@
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="salaografia" id="salaografia"
-                                    class="form-control" placeholder="Salaografia" required>
+                                    class="form-control" placeholder="Salaografia" required value="{{ old('salaografia') }}">
 
                                     @error('salaografia')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -97,7 +97,7 @@
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="image" name="foto" id="foto"
-                                    class="form-control" placeholder="Foto" required>
+                                    class="form-control" placeholder="Foto" required value="{{ old('foto') }}">
 
                             </div>
 

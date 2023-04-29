@@ -39,7 +39,7 @@ class SaloesController extends Controller
             'razao_social' => 'nullable|string',
             'email' => 'required|string',
             'endereco' => 'required|string',
-            'telefone' => 'required|number',
+            'telefone' => 'required|string',
             'salaografia' => 'required|string',
             'foto' => 'required|image',
         ]);
