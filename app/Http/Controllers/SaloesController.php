@@ -41,7 +41,7 @@ class SaloesController extends Controller
             'endereco' => 'required|string',
             'telefone' => 'required|string',
             'salaografia' => 'required|string',
-            'foto' => 'required|image',
+            'foto' => 'nullable|image',
         ]);
 
         // Cria um novo objeto do tipo Salao em branco

@@ -50,9 +50,9 @@
 
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="razao_social" id="razao_social"
-                                        class="form-control" placeholder="Razão Social" requiredvalue="{{ old('razao_social') }}"> >
+                                        class="form-control" placeholder="Razão Social" required value="{{ old('razao_social') }}">
 
-                                        @error('razao_social')
+                                    @error('razao_social')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -70,7 +70,7 @@
 
                             <div class="col-lg-15 col-md-15 col-12">
                                 <input type="text" name="endereco" id="endereco"
-                                   class="form-control" placeholder="Endereço" required value="{{ old('endereco') }}">
+                                   class="form-control" placeholder="Endereço" value="{{ old('endereco') }}">
 
                                  @error('endereco')
                                    <div class="alert alert-danger">{{ $message }}</div>
@@ -90,7 +90,7 @@
                                 <input type="text" name="salaografia" id="salaografia"
                                     class="form-control" placeholder="Salaografia" required value="{{ old('salaografia') }}">
 
-                                    @error('salaografia')
+                                @error('salaografia')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -99,6 +99,9 @@
                                 <input type="image" name="foto" id="foto"
                                     class="form-control" placeholder="Foto" required value="{{ old('foto') }}">
 
+                                @error('foto')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                             </div>
 
                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
