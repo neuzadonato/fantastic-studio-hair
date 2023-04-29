@@ -36,7 +36,12 @@ class SaloesController extends Controller
         // Valida os dados do salão
         $requisicao->validate([
             'nome' => 'required|string',
-            'razao_social' => 'nullable|string'
+            'razao_social' => 'nullable|string',
+            'email' => 'required|string',
+            'endereco' => 'required|string',
+            'telefone' => 'required|number',
+            'salaografia' => 'required|string',
+            'foto' => 'required|image',
         ]);
 
         // Cria um novo objeto do tipo Salao em branco
