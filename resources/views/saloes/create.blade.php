@@ -78,7 +78,7 @@
                             </div>
 
                             <div class="col-lg-15 col-md-15 col-12">
-                                <input type="number" name="telefone" id="telefone" class="form-control"
+                                <input type="string" name="telefone" id="telefone" class="form-control"
                                     placeholder="Telefone" required>
 
                                  @error('telefone')
