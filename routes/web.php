@@ -5,6 +5,7 @@ use App\Http\Controllers\SaloesController;
 use App\Http\Controllers\AvaliacoesController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\ServicosController;
+use App\Http\Controllers\AutenticacaoController;
 
 
 /*
@@ -115,3 +116,8 @@ Route::put('/servicos/{servico}', [ServicosController::class, 'update'])->name('
 
 // Rota que remove um gato específico do banco de dados
 Route::delete('/servicos/{servico}', [ServicosController::class, 'destroy'])->name('servicos.destroy');
+
+
+// LOGIN
+
+Route::get('/entrar', [AutenticacaoController::class, 'entrar'])->name('autenticacao.login');
