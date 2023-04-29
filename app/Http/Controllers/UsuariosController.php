@@ -24,11 +24,10 @@ class UsuariosController extends Controller
         $usuario = new Usuario();
 
         $usuario->nome = $requisicao->nome;
-        $usuario->raca = $requisicao->telefone;
-        $usuario->idade = $requisicao->email;
-        $usuario->sexo = $requisicao->endereco;
-        $usuario->cor = $requisicao->salao;
-        $usuario->foto = $requisicao->foto;
+        $usuario->email = $requisicao->email;
+        $usuario->endereco = $requisicao->endereco;
+        $usuario->telefone = $requisicao->telefone;
+        $usuario->senha = $requisicao->senha;
 
         $usuario->save();
 
