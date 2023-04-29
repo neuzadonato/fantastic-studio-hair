@@ -42,23 +42,39 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <input type="text" name="nome" id="nome" class="form-control"
                                         placeholder="Nome" required>
+
+                                        @error('nome')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <input type="email" name="email" id="email"
                                         pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
-                                </div>
+
+                                        @error('email')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                    </div>
 
 
                                 <div class="col-lg-12 col-md-12 col-12">
                                     <input type="text" name="endereco" id="endereco"
                                         class="form-control" placeholder="endereco" required>
-                                </div>
+
+                                        @error('endereco')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                    </div>
 
                                 <div class="col-lg-15 col-md-15 col-12">
                                     <input type="text" name="telefone" id="telefone" class="form-control"
                                         placeholder="Telefone" required>
-                                </div>
+
+                                        @error('telefone')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                    </div>
 
                             {{-- <h6>Selecione uma opção:</h6>
 
@@ -96,12 +112,20 @@
                                 <div class="col-6 col-lg-6 col-md-6">
                                     <input type="password" name="senha" id="senha" class="form-control"
                                         placeholder="Senha" required>
-                                </div>
+
+                                        @error('senha')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                    </div>
 
                                 <div class="col-6 col-lg-6 col-md-6">
                                     <input type="password" name="senha_confirmation" id="ConfirmarSenha" class="form-control"
                                         placeholder="Confirmar Senha" required>
-                                </div>
+
+                                        @error('senha_confirmation')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                    </div>
 
 
                                 <div class="col-lg-4 col-md-10 col-8 mx-auto">
