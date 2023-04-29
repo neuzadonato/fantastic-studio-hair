@@ -9,16 +9,8 @@
                 <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
                     <ul class="social-icon d-flex justify-content-lg-end">
                         <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
-                                <span class="bi-twitter"></span>
-                            </a>
                         </li>
 
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
-                                <span class="bi-apple"></span>
-                            </a>
-                        </li>
 
                         <li class="social-icon-item">
                             <a href="#" class="social-icon-link">
@@ -26,16 +18,6 @@
                             </a>
                         </li>
 
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
-                                <span class="bi-youtube"></span>
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
-                                <span class="bi-pinterest"></span>
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -55,23 +37,23 @@
                     </li>
 
                     <li class="site-footer-link-item">
+                        <a href="#" class="site-footer-link">Cadastro</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
                         <a href="#" class="site-footer-link">Conheça</a>
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="#" class="site-footer-link">Salões</a>
+                        <a href="#" class="site-footer-link">Serviços</a>
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="#" class="site-footer-link">Schedule</a>
+                        <a href="#" class="site-footer-link"></a>
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="#" class="site-footer-link">Pricing</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a href="#" class="site-footer-link">Cadastro</a>
+                        <a href="#" class="site-footer-link">Ajuda</a>
                     </li>
                 </ul>
             </div>

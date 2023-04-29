@@ -12,7 +12,7 @@
                         <div>
                             <h3><small>Você pode olhar nossas</small> Avaliações</h3>
 
-                            <p>Lá você pode estar vendo:</p>
+                            <p>Aqui você estará vendo algumas funções!</p>
                         </div>
 
                         <p class="pricing-tag ms-auto">Economize Seu <span>Tempo</span></h2>
