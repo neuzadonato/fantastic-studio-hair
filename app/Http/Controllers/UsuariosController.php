@@ -26,7 +26,7 @@ class UsuariosController extends Controller
         $usuario->nome = $requisicao->nome;
         $usuario->raca = $requisicao->telefone;
         $usuario->idade = $requisicao->email;
-        $usuario->sexo = $requisicao->enderco;
+        $usuario->sexo = $requisicao->endereco;
         $usuario->cor = $requisicao->salao;
         $usuario->foto = $requisicao->foto;
 
