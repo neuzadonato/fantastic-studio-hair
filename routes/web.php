@@ -19,6 +19,13 @@ use App\Http\Controllers\AutenticacaoController;
 |
 */
 
+Route::middleware(['auth:usr'])->group(function(){
+
+    // Rota para o formulário de criação de Saloes
+    Route::get('/saloes/novo', [SaloesController::class, 'create'])->name('saloes.create');
+
+});
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -68,8 +75,7 @@ Route::delete('/usuarios/{usuario}', [UsuariosController::class, 'destroy'])->na
 
 Route::get('/saloes', [SaloesController::class, 'index'])->name('saloes.index');
 
-// Rota para o formulário de criação de Saloes
-Route::get('/saloes/novo', [SaloesController::class, 'create'])->name('saloes.create');
+
 
 // Rota para o mostrar um gato específico
 Route::get('/salao/{salao}', [SaloesController::class, 'show'])->name('saloes.show');
@@ -85,14 +91,6 @@ Route::put('/Saloes/{salao}', [SaloesController::class, 'update'])->name('saloes
 
 // Rota que remove um salão específico do banco de dados
 Route::delete('/Saloes/{salao}', [SaloesController::class, 'destroy'])->name('saloes.destroy');
-
-Route::get('/teste', function(){
-    return view('teste');
-});
-
-Route::get('/', function () {
-    return view('Home');
-});
 
 // Rotas para o CRUD de gatos
 
@@ -120,4 +118,6 @@ Route::delete('/servicos/{servico}', [ServicosController::class, 'destroy'])->na
 
 // LOGIN
 
-Route::get('/entrar', [AutenticacaoController::class, 'entrar'])->name('autenticacao.login');
+Route::get('/entrar', [AutenticacaoController::class, 'entrar'])->name('login');
+Route::post('/entrar', [AutenticacaoController::class, 'entrar_store'])->name('login.store');
+Route::get('/sair', [AutenticacaoController::class, 'logout'])->name('logout');

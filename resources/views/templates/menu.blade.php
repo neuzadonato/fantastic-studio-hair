@@ -48,7 +48,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="{{ route('autenticacao.login') }}">Login</a>
+                    <a class="nav-link click-scroll" href="{{ route('login') }}">Login</a>
                 </li>
             </ul>
 
