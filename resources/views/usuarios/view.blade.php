@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+
+@extends('templates.layout')
+
+@section('conteudo')
+    <section class="ticket-section section-padding">
+        <div class="section-overlay"></div>
+
+        <div class="container">
+            !DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -32,3 +40,7 @@
         </div>
     </body>
 </html>
+        </div>
+    </section>
+@endsection
+
