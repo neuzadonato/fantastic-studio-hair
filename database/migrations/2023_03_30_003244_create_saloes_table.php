@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('endereco');
             $table->string('telefone');
             $table->text('salaografia');
+            $table->integer('Usuario_id');
             $table->string('foto')->nullable()->default('');
             $table->timestamps();
         });

@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    <a class="nav-link click-scroll" href="{{ route('home') }}">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -46,13 +46,18 @@
                 <li class="nav-item">
                     <a class="nav-link click-scroll" href="#section_5">Ajuda</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link click-scroll" href="{{ route('login') }}">Login</a>
-                </li>
             </ul>
 
-           <a href="{{ route('usuarios.create') }}" class="btn custom-btn d-lg-block d-none">Cadastro</a>
+            @auth
+                <a class="btn custom-btn d-lg-block d-none" href="{{ route('painel.home') }}">Painel</a>
+                <a href="{{ route('logout') }}" class="btn custom-btn d-lg-block d-none ms-2">Sair</a>
+            @endauth
+
+            @guest
+                <a class="btn custom-btn d-lg-block d-none" href="{{ route('login') }}">Login</a>
+                <a href="{{ route('usuarios.create') }}" class="btn custom-btn d-lg-block d-none ms-2">Cadastre-se</a>
+            @endguest
+
         </div>
     </div>
 </nav>

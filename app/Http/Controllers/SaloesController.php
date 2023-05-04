@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Salao;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 
 class SaloesController extends Controller
 {
@@ -14,7 +14,8 @@ class SaloesController extends Controller
     public function index()
     {
         // Pega todos os registos da tabela relacionada ao modelo Salao
-        $saloes = Salao::all();
+        $usuario = Auth::user();
+        $saloes = $usuario->saloes;
 
         // Manda os dados para uma view, no caso saloes.index
         return view('saloes.index', compact('saloes'));
@@ -55,6 +56,7 @@ class SaloesController extends Controller
         $salao->telefone = $requisicao->telefone;
         $salao->salaografia = $requisicao->salaografia;
         $salao->foto = $requisicao->foto;
+        $salao->Usuario_id = Auth::user()->id;
 
         // Salva o objeto no banco de dados
         $salao->save();

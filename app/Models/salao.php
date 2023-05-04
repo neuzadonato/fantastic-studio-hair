@@ -22,6 +22,12 @@ class Salao extends Model
         'Salaografia',
         'Foto',
         'Senha',
-        'Confirmar_Senha'
+        'Confirmar_Senha',
+        'Usuario_id'
     ];
+
+    public function usuario()
+    {
+        return $this->belongsTo(Usuario::class, 'Usuario_id');
+    }
 }

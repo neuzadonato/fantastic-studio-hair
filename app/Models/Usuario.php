@@ -25,4 +25,9 @@ class Usuario extends Authenticatable
     {
         return $this->senha;
     }
+
+    public function saloes()
+    {
+        return $this->hasMany(Salao::class, 'Usuario_id');
+    }
 }
