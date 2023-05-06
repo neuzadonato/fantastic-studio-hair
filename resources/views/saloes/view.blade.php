@@ -5,7 +5,7 @@
         <div class="section-overlay"></div>
 
         <div class="container">
-            <h1>{{ $salao->nome }}</h1>
+            <h1 class="text-white">{{ $salao->nome }}</h1>
             <h2>{{ $salao->razao_social }}</h2>
             <h3>{{ $salao->email }}</h3>
             <h4>{{ $salao->endereco }}</h4>
