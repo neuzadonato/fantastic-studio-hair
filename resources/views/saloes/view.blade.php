@@ -6,12 +6,11 @@
 
         <div class="container">
             <h1 class="text-white">{{ $salao->nome }}</h1>
-            <h2>{{ $salao->razao_social }}</h2>
-            <h3>{{ $salao->email }}</h3>
-            <h4>{{ $salao->endereco }}</h4>
-            <h5>{{ $salao->telefone }}</h5>
+            <h2 class="text-white">{{ $salao->razao_social }}</h2>
+            <h3 class="text-white" >{{ $salao->email }}</h3>
+            <h4 class="text-white" >{{ $salao->endereco }}</h4>
+            <h5 class="text-white">{{ $salao->telefone }}</h5>
             <h6>{{ $salao->salaografia }}</h6>
-            <h1>{{ $salao->foto }}</h1>
             <h2>{{ $salao->senha }}</h2>
             <h3>{{ $salao->confirmar_senha }}</h3>
 
