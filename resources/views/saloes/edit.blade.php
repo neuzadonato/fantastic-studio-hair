@@ -24,7 +24,7 @@
 
                 <div class="mb-3">
                     <label>Email</label>
-                    <input type="number" name="email" class="form-control" value="{{ $salao->email }}">
+                    <input type="email" name="email" class="form-control" value="{{ $salao->email }}">
                 </div>
 
                 <div class="mb-3">
@@ -40,26 +40,6 @@
                 <div class="mb-3">
                     <label>Salaografia</label>
                     <input type="text" name="salaogragrafia" class="form-control" value="{{ $salao->salaografia }}">
-                </div>
-
-                <div class="mb-3">
-                    <label>Foto</label>
-                    <input type="image" name="foto" class="form-control" value="{{ $salao->foto }}">
-                </div>
-
-                <div class="mb-3">
-                    <label>Senha</label>
-                    <input type="text" name="senha" class="form-control" value="{{ $salao->senha }}">
-                </div>
-
-                <div class="mb-3">
-                    <label>Confirmar Senha</label>
-                    <input type="text" name="confirmar_senha" class="form-control" value="{{ $salao->confirmar_senha }}">
-                </div>
-
-                <div class="mb-3">
-                    <label>Salão</label>
-                    <textarea name="salao" id="" rows="5" class="form-control">{{ $salao->salao }}</textarea>
                 </div>
 
                 <div>
