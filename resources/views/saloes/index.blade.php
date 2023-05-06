@@ -17,9 +17,6 @@
                                 <th>endereco</th>
                                 <th>telefone</th>
                                 <th>salaografia</th>
-                                <th>foto</th>
-                                <th>senha</th>
-                                <th>confirmar_senha</th>
                                 <th></th>
                             </tr>
 
@@ -30,11 +27,7 @@
                                     <td>{{ $salao->email }}</td>
                                     <td>{{ $salao->endereco }}</td>
                                     <td>{{ $salao->telefone }}</td>
-                                    <td>{{ $salao->salaogragfia }}</td>
-                                    <td>{{ $salao->foto }}</td>
-                                    <td>{{ $salao->senha }}</td>
-                                    <td>{{ $salao->confirmar_senha }}</td>
-
+                                    <td>{{ $salao->salaografia }}</td>
                                     <td>
                                         <a class="link" href="{{ route('saloes.show', $salao->id) }}">
                                             Ver
