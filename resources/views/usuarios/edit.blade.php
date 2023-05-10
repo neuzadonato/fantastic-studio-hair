@@ -5,7 +5,7 @@
         <div class="section-overlay"></div>
 
         <div class="container">
-            <h1>Edição do usuario {{ $usuario->id }}</h1>
+            <h1 class="text-white">Edição do usuario {{ $usuario->id }}</h1>
 
             <form method="POST" action="{{ route('usuarios.update', $usuario->id) }}">
                 @csrf

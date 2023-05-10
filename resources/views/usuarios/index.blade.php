@@ -6,17 +6,17 @@
         <div class="section-overlay"></div>
 
         <div class="container">
-            <title>Lista de Usuarios</title>
+            <title >Lista de Usuários </title>
     </head>
     <body>
         <div class="container">
-            <h1>Lista de Usuarios</h1>
+            <h1 class="text-white">Lista de Usuários</h1>
 
             <a class="btn btn-outline-success my-2" href="{{ route('usuarios.create') }}">Novo usuario</a>
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
-                    <th>Nome</th>
+                    <th >Nome</th>
                     <th>Telefone</th>
                     <th>Email</th>
                     <th>Endereço</th>
