@@ -6,7 +6,7 @@
         <div class="section-overlay"></div>
 
         <div class="container">
-            !DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,15 +18,13 @@
     </head>
     <body>
         <div class="container">
-            <h1>{{ $usuario->nome }} - {{ $usuario->telefone }}</h1>
+            <h1 class="text-white" > Nome: {{ $usuario->nome }} </h1>
 
-            <h3>{{ $usuario->telefone }} número</h3>
+            <h2 class="text-white">Telefone: {{ $usuario->telefone }} </h2>
 
-            <h3>endereço {{ $usuario->endereco }}</h3>
+            <h3 class="text-white">Endereço: {{ $usuario->endereco }}</h3>
 
-            <p>
-                {{ $usuario->email }}
-            </p>
+            <h4 class="text-white">E-mail: {{ $usuario->email }} </h4>
 
             <a class="btn btn-light" href="{{ route('usuarios.index') }}">Voltar a lista</a>
             <a class="btn btn-warning" href="{{ route('usuarios.edit', $usuario->id) }}">Editar</a>
