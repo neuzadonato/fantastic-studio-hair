@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+@extends('templates.layout')
+
+@section('conteudo')
+    <section class="ticket-section section-padding">
+        <div class="section-overlay"></div>
+
+        <div class="container">
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -6,59 +12,63 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <title>Cadastro de servicos</title>
+
+        <title class="text-white">Cadastro de servicos</title>
     </head>
     <body>
         <div class="container mb-3">
-            <h1>Novo Servico</h1>
+            <h1 class="text-white">Novo Serviço</h1>
 
             <form method="POST" action="{{ route('servicos.store') }}">
                 @csrf
 
                 <div class="mb-3">
-                    <label>Titulo</label>
+                    <label class="text-white">Titulo</label>
                     <input type="string" name="titulo" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Valor</label>
+                    <label class="text-white">Valor</label>
                     <input type="decimal" name="valor" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Descrição</label>
+                    <label class="text-white" >Descrição</label>
                     <input type="text" name="descricao" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Barba</label>
+                    <label class="text-white">Barba</label>
                     <input type="string" name="barba" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Cabelo</label>
+                    <label class="text-white">Cabelo</label>
                     <input type="string" name="cabelo" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>SPA</label>
+                    <label class="text-white">SPA</label>
                     <input type="string" name="spa" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Manicure e pédicure</label>
+                    <label class="text-white">Manicure e pédicure</label>
                     <input type="string" name="manicurepedicure" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Fotos</label>
+                    <label class="text-white">Fotos</label>
                     <input type= "image"name="fotos" class="form-control">
                 </div>
 
                 <div>
                     <input type="submit" value="Salvar servico" class="btn btn-primary">
-                </div>
-            </form>
-        </div>
-    </body>
-</html>
+                </form>
+            </div>
+        </body>
+    </html>
+            </div>
+        </section>
+    @endsection
+

@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+@extends('templates.layout')
+
+@section('conteudo')
+    <section class="ticket-section section-padding">
+        <div class="section-overlay"></div>
+
+        <div class="container">
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,8 +27,6 @@
             <h2>{{ $servico->manicurepedicure }}</h2>
             <h2>{{ $servico->fotos }}</h2>
 
-
-
             <a class="btn btn-light" href="{{ route('servicos.index') }}">Voltar a lista</a>
             <a class="btn btn-warning" href="{{ route('servicos.edit', $servico->id) }}">Editar</a>
 
@@ -34,3 +39,6 @@
         </div>
     </body>
 </html>
+        </div>
+    </section>
+@endsection

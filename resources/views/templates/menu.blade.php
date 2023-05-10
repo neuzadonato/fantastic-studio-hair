@@ -36,7 +36,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_3">Serviços</a>
+                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/servicos#section_3">Serviços</a>
                 </li>
 
                 <li class="nav-item">

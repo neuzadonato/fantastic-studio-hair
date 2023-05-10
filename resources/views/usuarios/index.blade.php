@@ -5,12 +5,12 @@
     <section class="ticket-section section-padding">
         <div class="section-overlay"></div>
 
-        <div class="container">
+        <div class="container" text-white mb-4>
             <title>Lista de Usuarios</title>
     </head>
     <body>
         <div class="container">
-            <h1>Lista de Usuarios</h1>
+            <h1 >Lista de Usuarios</h1>
 
             <a class="btn btn-outline-success my-2" href="{{ route('usuarios.create') }}">Novo usuario</a>
 
