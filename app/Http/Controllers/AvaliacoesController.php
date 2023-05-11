@@ -45,7 +45,7 @@ class AvaliacoesController extends Controller
         $Avaliacao->save();
 
         // Redireciona para a página de detalhes do Avaliacao
-        return redirect()->route('Avaliacoes.show', $Avaliacao->id);
+        return redirect()->route('avaliacoes.show', $Avaliacao->id);
     }
 
     /**
@@ -56,10 +56,10 @@ class AvaliacoesController extends Controller
      * está na rota. O Laravel faz a busca no banco de dados e retorna o objeto
      * que corresponde ao id passado na rota.
      */
-    public function show(Avaliacoes $Avaliacao)
+    public function show(Avaliacoes $avaliacao)
     {
         // Retorna a view Avaliacoes.view com o objeto $Avaliacao
-        return view('Avaliacoes.view', compact('Avaliacao'));
+        return view('Avaliacoes.view', compact('avaliacao'));
     }
 
     /**
@@ -80,7 +80,7 @@ class AvaliacoesController extends Controller
         $Avaliacao->update($requisicao->all());
 
         // Redireciona para a página de detalhes do Avaliacao
-        return redirect()->route('Avaliacoes.show', $Avaliacao->id);
+        return redirect()->route('avaliacoes.show', $Avaliacao->id);
     }
 
     /**
@@ -90,6 +90,6 @@ class AvaliacoesController extends Controller
     {
         $Avaliacao->delete();
 
-        return redirect()->route('Avaliacoes.index');
+        return redirect()->route('avaliacoes.index');
     }
 }

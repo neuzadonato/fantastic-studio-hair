@@ -49,13 +49,11 @@ class SaloesController extends Controller
         $salao = new Salao();
 
         // Preenche os campos do objeto com os dados da requisição
-        $salao->nome = $requisicao->nome;
-        $salao->razao_social = $requisicao->razao_social;
-        $salao->email = $requisicao->email;
         $salao->endereco = $requisicao->endereco;
         $salao->telefone = $requisicao->telefone;
-        $salao->salaografia = $requisicao->salaografia;
-        $salao->foto = $requisicao->foto;
+        $salao->salaografia = $requisicao->salaografia;    
+        $salao->razao_social = $requisicao->razao_social;
+        $salao->email = $requisicao->email;    
         $salao->Usuario_id = Auth::user()->id;
 
         // Salva o objeto no banco de dados
@@ -94,10 +92,22 @@ class SaloesController extends Controller
     public function update(Request $requisicao, Salao $salao)
     {
         // Atualiza o objeto com os dados da requisição
-        $salao->update($requisicao->all());
+        
+        $salao->email = $requisicao->email;
+        $salao->save();
+        $salao-> nome= $requisicao->nome;
+        $salao->save();
+        $salao->endereco = $requisicao->endereco;
+        $salao->save();
+        $salao->razao_social = $requisicao->razao_social;
+        $salao->save();
+        $salao->salaografia= $requisicao->salaografia;
+        $salao->save();
+        $salao->telefone = $requisicao->telefone;
+        $salao->save();
 
-        // Redireciona para a página de detalhes do gato
-        return redirect()->route('saloes.show', $salao->id);
+        // Redireciona para a página de detalhes do salao
+            return redirect()->route('saloes.show', $salao->id);
     }
 
     /**
