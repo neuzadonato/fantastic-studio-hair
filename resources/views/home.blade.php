@@ -5,5 +5,7 @@
 
     @include('templates.sobre')
 
+    @include('templates.saloes')
+
     @include('templates.ajuda')
 @endsection

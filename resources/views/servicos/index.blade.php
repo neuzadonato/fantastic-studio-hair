@@ -1,15 +1,11 @@
 @extends('templates.layout')
 
-@section('conteudo')
-    <section class="ticket-section section-padding">
-        <div class="section-overlay"></div>
+        @section('conteudo')
+            <section class="ticket-section section-padding">
+                <div class="section-overlay"></div>
 
-        <div class="container" text-white mb-4>
-        <title >Lista de Serviços</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="text-white">Lista de Serviços</h1>
+                <div class="container">
+                        <h1 class="text-white">Lista de Serviços</h1>
 
             <a class="btn btn-outline-success my-2" href="{{ route('servicos.create') }}">Novo Serviços</a>
 
@@ -44,10 +40,3 @@
                 @endforeach
             </table>
         </div>
-
-
-    </body>
-</html>
-        </div>
-    </section>
-@endsection

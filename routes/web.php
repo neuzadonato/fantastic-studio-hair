@@ -7,7 +7,7 @@ use App\Http\Controllers\AvaliacoesController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\ServicosController;
 use App\Http\Controllers\AutenticacaoController;
-
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,9 +42,9 @@ Route::middleware(['auth:usr'])->group(function(){
     Route::delete('/Saloes/{salao}', [SaloesController::class, 'destroy'])->name('saloes.destroy');
 });
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [SiteController::class, 'home'])->name('home');
+Route::get('/salao/{nome_salao}/{salao}', [SiteController::class, 'salao'])->name('site.salao');
+
 
 // Rotas para o CRUD de Avaliacoes
 
