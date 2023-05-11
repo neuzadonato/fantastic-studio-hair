@@ -36,11 +36,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/servicos#section_3">Serviços</a>
+                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/servicos#section_3">Salões</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_4">Avaliações</a>
+                    <a class="nav-link click-scroll" href="#section_4">Serviços</a>
                 </li>
 
                 <li class="nav-item">
