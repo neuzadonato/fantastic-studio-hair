@@ -39,7 +39,7 @@
 
                 <div class="mb-3">
                     <label>Salaografia</label>
-                    <input type="text" name="salaogragrafia" class="form-control" value="{{ $salao->salaografia }}">
+                    <input type="text" name="salaografia" class="form-control" value="{{ $salao->salaografia }}">
                 </div>
 
                 <div>

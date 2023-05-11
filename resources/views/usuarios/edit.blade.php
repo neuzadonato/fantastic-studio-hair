@@ -31,11 +31,6 @@
                     <input type="text" name="endereco" class="form-control" value="{{ $usuario->endereco }}">
                 </div>
 
-                <div class="mb-3">
-                    <label class="text-white">Salãografia: </label>
-                    <textarea name="salao" id="" rows="5" class="form-control">{{ $usuario->salao }}</textarea>
-                </div>
-
                 <div>
                     <input type="submit" value="Atualizar Usuario" class="btn btn-primary">
                 </div>
