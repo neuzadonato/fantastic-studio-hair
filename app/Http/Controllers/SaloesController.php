@@ -49,11 +49,12 @@ class SaloesController extends Controller
         $salao = new Salao();
 
         // Preenche os campos do objeto com os dados da requisição
+        $salao->nome = $requisicao->nome;
         $salao->endereco = $requisicao->endereco;
         $salao->telefone = $requisicao->telefone;
-        $salao->salaografia = $requisicao->salaografia;    
+        $salao->salaografia = $requisicao->salaografia;
         $salao->razao_social = $requisicao->razao_social;
-        $salao->email = $requisicao->email;    
+        $salao->email = $requisicao->email;
         $salao->Usuario_id = Auth::user()->id;
 
         // Salva o objeto no banco de dados
@@ -92,7 +93,7 @@ class SaloesController extends Controller
     public function update(Request $requisicao, Salao $salao)
     {
         // Atualiza o objeto com os dados da requisição
-        
+
         $salao->email = $requisicao->email;
         $salao->save();
         $salao-> nome= $requisicao->nome;
