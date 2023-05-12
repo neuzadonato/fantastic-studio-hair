@@ -32,7 +32,9 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_2">Conheça</a>
+
+                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/">Conheça</a>
+
                 </li>
 
                 <li class="nav-item">
