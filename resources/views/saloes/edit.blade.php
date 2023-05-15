@@ -13,6 +13,11 @@
                 @method('PUT')
 
                 <div class="mb-3">
+                    <label>Foto</label>
+                    <input type="img" name="foto" class="form-control" value="{{ $salao->foto }}">
+                </div>
+
+                <div class="mb-3">
                     <label>Nome</label>
                     <input type="text" name="nome" class="form-control" value="{{ $salao->nome }}">
                 </div>

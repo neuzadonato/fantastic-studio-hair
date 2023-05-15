@@ -37,6 +37,15 @@
                             }
                         </script>
 
+                        <div class="col-lg-15 col-md-15 col-12">
+                                <input type="image" name="foto" id="foto"
+                                    class="form-control" placeholder="Foto" required value="{{ old('foto') }}">
+
+                                @error('foto')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+
                         <div class="ticket-form-body">
                             <div class="row">
                                 <div class="col-lg-15 col-md-15 col-12">
@@ -95,14 +104,7 @@
                                 @enderror
                             </div>
 
-                            <div class="col-lg-15 col-md-15 col-12">
-                                <input type="image" name="foto" id="foto"
-                                    class="form-control" placeholder="Foto" required value="{{ old('foto') }}">
-
-                                @error('foto')
-                                    <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror
-                            </div>
+                            
 
                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                 <button type="submit" class="form-control">Salvar</button>

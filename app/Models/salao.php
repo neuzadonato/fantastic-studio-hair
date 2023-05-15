@@ -14,6 +14,7 @@ class Salao extends Model
 
     // Indica os campos que podem ser preenchidos pelo usuário
     protected $fillable = [
+     
         'Nome',
         'Razao_Social',
         'Email',

@@ -93,7 +93,7 @@ class SaloesController extends Controller
     public function update(Request $requisicao, Salao $salao)
     {
         // Atualiza o objeto com os dados da requisição
-
+        $salao->foto = $requisicao->foto;
         $salao->email = $requisicao->email;
         $salao->save();
         $salao-> nome= $requisicao->nome;

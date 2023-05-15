@@ -11,6 +11,7 @@
 
                         <table class="table table-hover table-bordered table-primary">
                             <tr class="table-dark">
+                                <th>foto</th>
                                 <th>nome</th>
                                 <th>razao_social</th>
                                 <th>email</th>
@@ -22,6 +23,7 @@
 
                             @foreach ($saloes as $salao)
                                 <tr>
+                                    <td>{{ $salao->foto }}</td>
                                     <td>{{ $salao->nome }}</td>
                                     <td>{{ $salao->razao_social }}</td>
                                     <td>{{ $salao->email }}</td>
