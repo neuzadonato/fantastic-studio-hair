@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="text-white" > Nome: {{ $usuario->nome }} </h1>
+            <h1 class="text-white" >Nome: {{ $usuario->nome }} </h1>
 
             <h2 class="text-white">Telefone: {{ $usuario->telefone }} </h2>
 
