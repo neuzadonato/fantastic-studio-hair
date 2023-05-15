@@ -5,7 +5,7 @@
                 <div class="section-overlay"></div>
 
                 <div class="container">
-                        <h1 class="text-white">Lista de Saloes</h1>
+                        <h1 class="text-white">Lista de Salões</h1>
 
                         <a class="btn btn-outline-success my-2" href="{{ route('saloes.create') }}">Novo Salao</a>
 
