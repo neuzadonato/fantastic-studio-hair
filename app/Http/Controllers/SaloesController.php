@@ -109,6 +109,7 @@ class SaloesController extends Controller
     {
         // Atualiza o objeto com os dados da requisição
         $salao->foto = $requisicao->foto;
+        $salao->save();
         $salao->email = $requisicao->email;
         $salao->save();
         $salao-> nome= $requisicao->nome;
