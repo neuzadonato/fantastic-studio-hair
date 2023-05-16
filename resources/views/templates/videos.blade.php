@@ -37,10 +37,7 @@
                             </a>
                         </li>
 
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
-                                <span class="bi-instagram"></span>
-                            </a>
+
                         </li>
                     </ul>
                 </div>
