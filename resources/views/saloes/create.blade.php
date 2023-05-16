@@ -8,7 +8,7 @@
             <div class="row">
 
                 <div class="col-lg-6 col-10 mx-auto">
-                    <form class="custom-form ticket-form mb-5 mb-lg-0" action="{{ route('saloes.store') }}" method="post" role="form">
+                    <form class="custom-form ticket-form mb-5 mb-lg-0" action="{{ route('saloes.store') }}" method="post" role="form" enctype="multipart/form-data">
                         @csrf
 
                         <h2 class="text-center mb-4">Cadastro</h2>
@@ -38,9 +38,9 @@
                         </script>
 
                         <div class="col-lg-15 col-md-15 col-12">
-                                <input type="image" name="foto" id="foto"
+                                <input type="file" name="foto" id="foto"
                                     class="form-control" placeholder="Foto" required value="{{ old('foto') }}">
-
+                                                
                                 @error('foto')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
@@ -102,9 +102,7 @@
                                 @error('salaografia')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
-                            </div>
-
-                            
+                            </div>                            
 
                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                 <button type="submit" class="form-control">Salvar</button>

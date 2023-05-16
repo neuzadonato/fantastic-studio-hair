@@ -49,6 +49,8 @@ class SaloesController extends Controller
         $salao = new Salao();
 
         // Preenche os campos do objeto com os dados da requisição
+        
+        $salao->foto= $requisicao->foto;
         $salao->nome = $requisicao->nome;
         $salao->endereco = $requisicao->endereco;
         $salao->telefone = $requisicao->telefone;
@@ -56,6 +58,17 @@ class SaloesController extends Controller
         $salao->razao_social = $requisicao->razao_social;
         $salao->email = $requisicao->email;
         $salao->Usuario_id = Auth::user()->id;
+
+        $dados = $requisicao->all();
+        $dados['foto'] = '';
+
+        if($requisicao->hasFile('foto')) {
+            $arquivo=$requisicao->file('foto')->store('saloes',['disk'=>'public']);
+
+        if($arquivo) {
+            $dados['foto']=$arquivo;
+            
+        }
 
         // Salva o objeto no banco de dados
         $salao->save();
