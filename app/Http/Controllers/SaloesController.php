@@ -87,7 +87,7 @@ class SaloesController extends Controller
      * que corresponde ao id passado na rota.
      */   
     
-     public function show (Salao $salao)
+     public function show(Salao $salao)
     {
         // Retorna a view saloes.view com o objeto $salao
         return view('saloes.view', compact('salao'));
@@ -108,6 +108,7 @@ class SaloesController extends Controller
     public function update(Request $requisicao, Salao $salao)
     {
         // Atualiza o objeto com os dados da requisição
+
         $salao->foto = $requisicao->foto;
         $salao->save();
         $salao->email = $requisicao->email;
