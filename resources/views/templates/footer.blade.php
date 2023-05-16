@@ -14,7 +14,7 @@
 
                         <li class="social-icon-item">
                             <a href="#" class="social-icon-link">
-                                <span class="bi-instagram"></span>
+                                <span class="bi-facebook"></span>
                             </a>
                         </li>
 

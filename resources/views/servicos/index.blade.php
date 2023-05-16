@@ -11,26 +11,20 @@
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
-                    <th>Titulo</th>
-                    <th>Valor</th>
-                    <th>Descrição</th>
                     <th>Barba</th>
                     <th>Cabelo</th>
                     <th>SPA</th>
                     <th>Manicure e Pédicure</th>
-                    <th>Fotos</th>
+
                 </tr>
 
                 @foreach ($servicos as $servico)
                     <tr>
-                        <td>{{ $servico->titulo }}</td>
-                        <td>{{ $servico->valor }}</td>
-                        <td>{{ $servico->descricao }}</td>
                         <td>{{ $servico->barba }}</td>
                         <td>{{ $servico->cabelo }}</td>
                         <td>{{ $servico->spa }}</td>
                         <td>{{ $servico->manicurepedicure }}</td>
-                        <td>{{ $servico->fotos }}</td>
+
                         <td>
                             <a class="link" href="{{ route('servicos.show', $servicos->id) }}">
                                 Ver
