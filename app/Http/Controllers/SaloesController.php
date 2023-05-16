@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class SaloesController extends Controller
+
 {
      /**
      * Lista todos os saloes cadastrados
@@ -67,7 +68,7 @@ class SaloesController extends Controller
 
         if($arquivo) {
             $dados['foto']=$arquivo;
-            
+
         }
 
         // Salva o objeto no banco de dados
@@ -84,8 +85,9 @@ class SaloesController extends Controller
      * pelo Laravel, pois o nome do parametro é o mesmo nome do parametro que
      * está na rota. O Laravel faz a busca no banco de dados e retorna o objeto
      * que corresponde ao id passado na rota.
-     */
-    public function show(Salao $salao)
+     */   
+    
+     public function show (Salao $salao)
     {
         // Retorna a view gatos.view com o objeto $salao
         return view('saloes.view', compact('salao'));
