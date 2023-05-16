@@ -1,4 +1,4 @@
-<section class="artists-section section-padding" id="section_3">
+<section class="artists-section section-padding" id="section_4">
     <div class="container">
         <div class="row justify-content-center">
 

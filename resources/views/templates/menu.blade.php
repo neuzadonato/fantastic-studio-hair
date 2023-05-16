@@ -33,12 +33,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/">Conheça</a>
+                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/#section_2">Conheça</a>
 
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_3">Salões</a>
+                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/#section_3">Salões</a>
                 </li>
 
                 <li class="nav-item">
@@ -46,7 +46,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_5">Ajuda</a>
+                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/#section_5">Ajuda</a>
                 </li>
             </ul>
 
