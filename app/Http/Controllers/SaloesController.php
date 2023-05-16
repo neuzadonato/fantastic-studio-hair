@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class SaloesController extends Controller
-
 {
      /**
      * Lista todos os saloes cadastrados
@@ -43,7 +42,7 @@ class SaloesController extends Controller
             'endereco' => 'required|string',
             'telefone' => 'required|string',
             'salaografia' => 'required|string',
-            'foto' => 'nullable|image',
+            'foto' => 'nullable|image'
         ]);
 
         // Cria um novo objeto do tipo Salao em branco
@@ -65,7 +64,7 @@ class SaloesController extends Controller
 
         if($requisicao->hasFile('foto')) {
             $arquivo=$requisicao->file('foto')->store('saloes',['disk'=>'public']);
-
+        }
         if($arquivo) {
             $dados['foto']=$arquivo;
 
