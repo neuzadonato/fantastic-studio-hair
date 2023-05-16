@@ -81,7 +81,7 @@ class SaloesController extends Controller
     /**
      * Mostra um salao específico
      *
-     * O parametro $salao é um objeto do tipo Gato que é passado automaticamente
+     * O parametro $salao é um objeto do tipo Salao que é passado automaticamente
      * pelo Laravel, pois o nome do parametro é o mesmo nome do parametro que
      * está na rota. O Laravel faz a busca no banco de dados e retorna o objeto
      * que corresponde ao id passado na rota.
@@ -89,7 +89,7 @@ class SaloesController extends Controller
     
      public function show (Salao $salao)
     {
-        // Retorna a view gatos.view com o objeto $salao
+        // Retorna a view saloes.view com o objeto $salao
         return view('saloes.view', compact('salao'));
     }
 
