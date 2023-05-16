@@ -18,14 +18,11 @@
     <body>
         <div class="container">
             <h1>{{ $servico->id }} - {{ $servico->nome }}</h1>
-            <h2>{{ $servico->titulo }}</h2>
-            <h2>{{ $servico->valor }}</h2>
-            <h2>{{ $servico->descricao }}</h2>
+
             <h2>{{ $servico->barba }}</h2>
             <h2>{{ $servico->cabelo }}</h2>
             <h2>{{ $servico->spa }}</h2>
             <h2>{{ $servico->manicurepedicure }}</h2>
-            <h2>{{ $servico->fotos }}</h2>
 
             <a class="btn btn-light" href="{{ route('servicos.index') }}">Voltar a lista</a>
             <a class="btn btn-warning" href="{{ route('servicos.edit', $servico->id) }}">Editar</a>
