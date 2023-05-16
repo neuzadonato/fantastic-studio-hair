@@ -6,13 +6,22 @@
             <h1 class="text-white">{{ $salao->nome }}</h1>
         </div>
 
+        <style>
+            .container1 {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 100px;
+        }
+        </style>
         <div class="container">
             <form action="AVALIACAO"></form>
-            <div class="container">
-                <h1>Nova Avaliação</h1>
+            <div class="container1">
+                <h1>Avalie este salão</h1>
                 <form method="POST" action="{{ route('avaliacoes.store') }}">
                     @csrf
-
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" class=form-control placeholder="Digite seu nome">
