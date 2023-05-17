@@ -48,12 +48,12 @@
             background-color: darkorange;
         }
         </style>
-    
+
             <div class="mb-3">
                     <label>Foto</label>
                     <input type="img" name="foto" class="form-control" value="{{ $salao->foto }}">
                 </div>
-            
+
                 <h1 class="text-white">Serviços</h1>
                 <form method="POST" action="{{ route('servicos.store') }}">
                     @csrf
@@ -61,7 +61,7 @@
                         <h2 class="text-white">Nome</h2>
                         <input type="text" name="nome" class=form-control placeholder="Digite seu nome">
                     </div>
-                
+
                     <div class="form-group">
                         <h3 class="text-white">Mensagem</h3>
                         <textarea name="mensagem" rows="4" class=form-control placeholder="Digite sua mensagem"></textarea>
@@ -69,14 +69,16 @@
                     <div>
                         <input type="submit" value="Salvar servicos" class="btn btn-primary">
                     </div>
-            
-        
+
+
         <div class="container">
             <form action="AVALIACAO"></form>
             <div class="container1">
                 <h1>Nova Avaliação</h1>
                 <form method="POST" action="{{ route('avaliacoes.store') }}">
                     @csrf
+                    <input type="hidden" name="salao_id" value="{{ $salao->id }}">
+
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" class=form-control placeholder="Digite seu nome">

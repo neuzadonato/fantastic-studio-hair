@@ -31,4 +31,9 @@ class Salao extends Model
     {
         return $this->belongsTo(Usuario::class, 'Usuario_id');
     }
+
+    public function avaliacoes()
+    {
+        return $this->hasMany(Avaliacoes::class, 'salao_id');
+    }
 }
