@@ -14,7 +14,7 @@
 
                 <div class="mb-3">
                     <label>Foto</label>
-                    <input type="img" name="foto" class="form-control" value="{{ $salao->foto }}">
+                    <input type="file" name="foto" class="form-control" value="{{ $salao->foto }}">
                 </div>
 
                 <div class="mb-3">
