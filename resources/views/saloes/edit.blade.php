@@ -13,8 +13,12 @@
                 @method('PUT')
 
                 <div class="mb-3">
-                    <label>Foto</label>
-                    <input type="file" name="foto" class="form-control" value="{{ $salao->foto }}">
+                    <input type="file" name="foto" id="foto"
+                                class="form-control" placeholder="Foto" required value="{{ old('foto') }}">
+
+                            @error('foto')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                 </div>
 
                 <div class="mb-3">
