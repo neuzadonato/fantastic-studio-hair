@@ -15,11 +15,43 @@
             border-radius: 5px;
             margin-top: 100px;
         }
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
         </style>
         <div class="container">
             <form action="AVALIACAO"></form>
             <div class="container1">
-                <h1>Avalie este salão</h1>
+                <h1>Nova Avaliação</h1>
                 <form method="POST" action="{{ route('avaliacoes.store') }}">
                     @csrf
                     <div class="form-group">
