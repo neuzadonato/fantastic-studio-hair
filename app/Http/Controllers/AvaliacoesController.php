@@ -40,6 +40,7 @@ class AvaliacoesController extends Controller
         $Avaliacao->email = $requisicao->email;
         $Avaliacao->nota = $requisicao->nota;
         $Avaliacao->mensagem = $requisicao->mensagem;
+        $Avaliacao->salao_id = $requisicao->salao_id;
 
         // Salva o objeto no banco de dados
         $Avaliacao->save();

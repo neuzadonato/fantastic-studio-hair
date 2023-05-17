@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email');
             $table->integer('nota');
             $table->text('mensagem');
+            $table->integer('salao_id');
 
 
             $table->timestamps();
