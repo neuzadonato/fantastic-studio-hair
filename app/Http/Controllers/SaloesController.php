@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class SaloesController extends Controller
 {
-     /**
+    /**
      * Lista todos os saloes cadastrados
      */
     public function index()
@@ -49,26 +49,25 @@ class SaloesController extends Controller
         $salao = new Salao();
 
         // Preenche os campos do objeto com os dados da requisição
-        
-        $salao->foto= $requisicao->foto;
+
         $salao->nome = $requisicao->nome;
         $salao->endereco = $requisicao->endereco;
         $salao->telefone = $requisicao->telefone;
         $salao->salaografia = $requisicao->salaografia;
         $salao->razao_social = $requisicao->razao_social;
         $salao->email = $requisicao->email;
-        $salao->Usuario_id = Auth::user()->id;
+        $salao->usuario_id = Auth::user()->id;
 
-        $dados = $requisicao->all();
-        $dados['foto'] = '';
+        $salao->foto = '';
 
         if($requisicao->hasFile('foto')) {
-            $arquivo=$requisicao->file('foto')->store('saloes',['disk'=>'public']);
-        }
-        if($arquivo) {
-            $dados['foto']=$arquivo;
+            $arquivo = $requisicao->file('foto')->store('saloes', ['disk' => 'public']);
 
+            if($arquivo) {
+                $salao->foto = $arquivo;
+            }
         }
+
 
         // Salva o objeto no banco de dados
         $salao->save();
@@ -84,8 +83,8 @@ class SaloesController extends Controller
      * pelo Laravel, pois o nome do parametro é o mesmo nome do parametro que
      * está na rota. O Laravel faz a busca no banco de dados e retorna o objeto
      * que corresponde ao id passado na rota.
-     */   
-    
+     */
+
      public function show(Salao $salao)
     {
         // Retorna a view saloes.view com o objeto $salao
@@ -108,19 +107,23 @@ class SaloesController extends Controller
     {
         // Atualiza o objeto com os dados da requisição
 
-        $salao->foto = $requisicao->foto;
-        $salao->save();
         $salao->email = $requisicao->email;
-        $salao->save();
         $salao-> nome= $requisicao->nome;
-        $salao->save();
         $salao->endereco = $requisicao->endereco;
-        $salao->save();
         $salao->razao_social = $requisicao->razao_social;
-        $salao->save();
         $salao->salaografia= $requisicao->salaografia;
-        $salao->save();
         $salao->telefone = $requisicao->telefone;
+
+        $salao->foto = '';
+
+        if($requisicao->hasFile('foto')) {
+            $arquivo = $requisicao->file('foto')->store('saloes', ['disk' => 'public']);
+
+            if($arquivo) {
+                $salao->foto = $arquivo;
+            }
+        }
+
         $salao->save();
 
         // Redireciona para a página de detalhes do salao

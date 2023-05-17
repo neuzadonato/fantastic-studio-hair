@@ -5,7 +5,7 @@
         <div class="section-overlay"></div>
 
         <div class="container">
-            <h1 class="text-white">{{ $salao->foto }}</h1>
+            <img src="/storage/{{ $salao->foto }}" />
             <h2 class="text-white">{{ $salao->nome }}</h2>
             <h3 class="text-white">{{ $salao->razao_social }}</h3>
             <h4 class="text-white" >{{ $salao->email }}</h4>
