@@ -78,6 +78,39 @@
                     </div>
                 </form>
             </div>
+            <body>
+                <div class="container">
+                    <h1>Lista de Avaliações</h1>
+
+                    <a class="btn btn-outline-success my-2" href="{{ route('avaliacoes.create') }}">Nova Avaliação</a>
+
+                    <table class="table table-hover table-bordered table-primary">
+                        <tr class="table-dark">
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Nota</th>
+                            <th>Mensagem</th>
+                            <th></th>
+                        </tr>
+
+                        @foreach ($salao->avaliacoes as $avaliacao)
+                            <tr>
+                                <td>{{ $avaliacao->nome }}</td>
+                                <td>{{ $avaliacao->email }}</td>
+                                <td>{{ $avaliacao->nota }}</td>
+                                <td>{{ $avaliacao->mensagem }}</td>
+                                <td>
+                                    <a class="link" href="{{ route('avaliacoes.show', $avaliacao->id) }}">
+                                        Ver
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </table>
+                </div>
+
+
+            </body>
         </head>
     </section>
 @endsection
