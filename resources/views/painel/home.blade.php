@@ -5,7 +5,7 @@
         <div class="section-overlay"></div>
 
         <div class="container">
-            <h1 class="text-center text-white ">Bem vindo ao painel administrador!</h1>
+            <h1 class="text-center text-white "> PAINEL DO ADMINISTRADOR!</h1>
 
             <nav>
                 <a href="{{ route('saloes.create') }}">Cadastrar  Salão</a>
