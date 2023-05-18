@@ -16,6 +16,11 @@
                     border-radius: 25px;
                     margin-top: 100px;
                 }
+
+                a {
+                    text-align: center;
+                    color: white;
+                }
             </style>
                 <div class="container1">
                     <nav>  <a href="{{ route('saloes.index') }}">Meus  Salões</a> </nav>
