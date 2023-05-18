@@ -12,7 +12,7 @@
             margin: 0 auto;
             padding: 20px;
             background-color: white;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-top: 100px;
         }
         h1 {
@@ -79,7 +79,7 @@
                 </form>
             </div>
             <body>
-                <div class="container">
+                <div class="container2">
                     <h1>Lista de Avaliações</h1>
 
                     <a class="btn btn-outline-success my-2" href="{{ route('avaliacoes.create') }}">Nova Avaliação</a>
@@ -108,6 +108,17 @@
                         @endforeach
                     </table>
                 </div>
+
+                <style>
+            .container2 {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+            </style>
 
 
             </body>

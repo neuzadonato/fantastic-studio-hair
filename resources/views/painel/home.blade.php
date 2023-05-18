@@ -23,11 +23,9 @@
                 }
             </style>
                 <div class="container1">
+                <div class="text-center">
                     <nav>  <a href="{{ route('saloes.index') }}">Meus  Salões</a> </nav>
-                    <nav>
-                <a href="{{ route('saloes.create') }}">Cadastrar  Salão</a>
-
-            </nav>
+                    <a href="{{ route('saloes.create') }}">Cadastrar  Salão</a>
         </div>
     </section>
 @endsection

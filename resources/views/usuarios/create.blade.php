@@ -60,7 +60,7 @@
 
                                 <div class="col-lg-12 col-md-12 col-12">
                                     <input type="text" name="endereco" id="endereco"
-                                        class="form-control" placeholder="endereco" required>
+                                        class="form-control" placeholder="Endereço" required>
 
                                         @error('endereco')
                                         <div class="alert alert-danger">{{ $message }}</div>
