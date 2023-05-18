@@ -18,12 +18,11 @@
                 }
             </style>
                 <div class="container1">
-            <nav>
+                    <nav>  <a href="{{ route('saloes.index') }}">Meus  Salões</a> </nav>
+                    <nav>
                 <a href="{{ route('saloes.create') }}">Cadastrar  Salão</a>
 
             </nav>
-        <nav>  <a href="{{ route('saloes.index') }}">Meus  Salões</a> </nav>
-
         </div>
     </section>
 @endsection
