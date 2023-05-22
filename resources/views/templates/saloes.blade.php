@@ -10,9 +10,13 @@
                             <a href="{{ route('site.salao', [$salao->nome, $salao->id]) }}">
                                 <div class="card p-4 border bg-white">
                                     <h1>{{ $salao->nome }}</h1>
-                                </div>
+                                </div>                                
                             </a>
                         </div>
+                        
+                        .h1 {
+                            text-align: center;
+                        }
                     @endforeach
                 </div>
 
