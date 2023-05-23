@@ -824,7 +824,7 @@ strong {
   background-color: var(--dark-color);
   position: relative;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 3px;
 }
 
 .site-footer-top {
@@ -838,7 +838,7 @@ strong {
 
 .site-footer-bottom {
   border-top: 1px solid #1f1c1c;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .site-footer-title {
