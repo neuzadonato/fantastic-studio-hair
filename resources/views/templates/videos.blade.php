@@ -7,7 +7,7 @@
             <div class="col-12 mt-auto mb-5 text-center">
                 <small>Venha Conhecer</small>
 
-                <h1 class="text-white mb-5">Fantastic Studio Hair</h1>
+                <h1 class="text-white mb-5">FANTASTIC STUDIO HAIR</h1>
 
                 <a class="btn custom-btn smoothscroll" href="#section_2">vamos lá</a>
             </div>
