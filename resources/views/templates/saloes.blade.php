@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-white text-center mb-4">Nossos salões parceiros</h1>
+                <h1 class="text-white text-center mb-4">NOSSOS SALÕES PARCEIROS</h1>
 
                 <div class="row g-3 py-3 text-center justify-content-center">
                     @foreach($saloes as $salao)
