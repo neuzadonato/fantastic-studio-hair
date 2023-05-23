@@ -4,7 +4,7 @@
             <div class="col-12">
                 <h1 class="text-white text-center mb-4">Nossos salões parceiros</h1>
 
-                <div class="row g-3 py-3 justify-content-center">
+                <div class="row g-3 py-3 text-center justify-content-center">
                     @foreach($saloes as $salao)
                         <div class="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-15">
                             <a href="{{ route('site.salao', [$salao->nome, $salao->id]) }}">
@@ -12,11 +12,8 @@
                                     <h1>{{ $salao->nome }}</h1>
                                 </div>                                
                             </a>
-                        </div>
+                        </div>                       
                         
-                        .h1 {
-                            text-align: center;
-                        }
                     @endforeach
                 </div>
 
