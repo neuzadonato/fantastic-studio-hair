@@ -22,20 +22,9 @@
             <form method="POST" action="{{ route('servicos.store') }}">
                 @csrf
 
-                <div class="mb-3">
-                    <label class="text-white">Titulo</label>
-                    <input type="string" name="titulo" class="form-control">
-                </div>
 
-                <div class="mb-3">
-                    <label class="text-white">Valor</label>
-                    <input type="decimal" name="valor" class="form-control">
-                </div>
 
-                <div class="mb-3">
-                    <label class="text-white" >Descrição</label>
-                    <input type="text" name="descricao" class="form-control">
-                </div>
+
 
                 <div class="mb-3">
                     <label class="text-white">Barba</label>
@@ -56,12 +45,6 @@
                     <label class="text-white">Manicure e pédicure</label>
                     <input type="string" name="manicurepedicure" class="form-control">
                 </div>
-
-                <div class="mb-3">
-                    <label class="text-white">Fotos</label>
-                    <input type= "image"name="fotos" class="form-control">
-                </div>
-
                 <div>
                     <input type="submit" value="Salvar servico" class="btn btn-primary">
                 </form>

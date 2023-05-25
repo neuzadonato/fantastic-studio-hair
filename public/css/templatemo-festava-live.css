@@ -13,7 +13,7 @@ https://templatemo.com/tm-583-festava-live
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #EE5007;
-  --secondary-color:              #EE5007;
+  --secondary-color:              #ee5007;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #EE5007;
   --custom-btn-bg-hover-color:    #c01f27;
@@ -507,7 +507,7 @@ strong {
 -----------------------------------------*/
 .about-section {
   background-image: url('../images/a.avif');
-  background-color: #704010;
+  background-color: #0c0602;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

@@ -24,15 +24,10 @@ public function create()
 public function store(Request $requisicao)
 {
     $servico = new Servico();
-
-    $servico->titulo= $requisicao->titulo;
-        $servico->valor = $requisicao->valor;
-        $servico->descricao = $requisicao->descricao;
         $servico->barba = $requisicao->barba;
         $servico->cabelo = $requisicao->cabelo;
         $servico->spa = $requisicao->spa;
         $servico->manicurepedicure = $requisicao->manicurepedicure ;
-        $servico->fotos = $requisicao->fotos ;
         $servico->save();
         return redirect()->route('servicos.show', $servico->id);
 
