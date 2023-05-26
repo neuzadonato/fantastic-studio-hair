@@ -1,3 +1,6 @@
+@extends('templates.layout')
+@section('conteudo')
+    <section class="about-section section-padding" id="section_2">
 <!DOCTYPE html>
 <html lang="en">
     <head>
