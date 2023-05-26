@@ -9,10 +9,10 @@
                 @csrf
 
                 <div class="contact-form-body">
-                    <h1 class="text-white text-center">Bem vindo ao Fantastic Hair Studio!</h1>
+                    <h1 class="text-white text-center">Fantastic Hair Studio!</h1>
 
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-4 text-center col-md-6 col-12">
                             <input type="usuario" name="usuario" class="form-control" placeholder="Usuário">
 
                             @error('usuario')
@@ -20,7 +20,7 @@
                             @enderror
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <input type="password" name="senha_usuario" class="form-control" placeholder="Senha">
 
                             @error('senha_usuario')
@@ -29,7 +29,9 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-4 col-md-6 col-12">
                     <button type="submit" class="form-control" value="Acessar" name="SendLogin">Logar </button>
+                    </div>
                 </div>
         </div>
     </section>
