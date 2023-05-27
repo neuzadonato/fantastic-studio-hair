@@ -800,7 +800,7 @@ strong {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
+  background: #0d6efd;
   border: none;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
