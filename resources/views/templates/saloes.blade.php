@@ -6,14 +6,17 @@
 
                 <div class="row g-3 py-3 text-center justify-content-center">
                     @foreach($saloes as $salao)
-                        <div class="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-15">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                             <a href="{{ route('site.salao', [$salao->nome, $salao->id]) }}">
                                 <div class="card p-4 border bg-white">
-                                    <h1>{{ $salao->nome }}</h1>
-                                </div>                                
+                                    <div class="foto text-center">
+                                        <img class="img-fluid" src="/storage/{{ $salao->foto }}" />
+                                    </div>
+
+                                    <h2>{{ $salao->nome }}</h2>
+                                </div>
                             </a>
-                        </div>                       
-                        
+                        </div>
                     @endforeach
                 </div>
 
