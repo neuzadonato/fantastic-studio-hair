@@ -8,6 +8,10 @@
             </div>
 
             <h1 class="text-white">{{ $salao->nome }}</h1>
+
+
+
+
         </div>
 
         <style>
