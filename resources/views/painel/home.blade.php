@@ -22,10 +22,11 @@
                     color: white;
                 }
             </style>
-                <div class="container1">
+            <div class="container1">
                 <div class="text-center">
-                    <nav>  <a href="{{ route('saloes.index') }}">Meus  Salões</a> </nav>
-                    <a href="{{ route('saloes.create') }}">Cadastrar  Salão</a>
-        </div>
+                    <nav> <a href="{{ route('saloes.index') }}">Meus Salões</a> </nav>
+                    <a href="{{ route('saloes.create') }}">Cadastrar Salão</a>
+                </div>
+            </div>
     </section>
 @endsection
