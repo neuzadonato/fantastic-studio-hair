@@ -8,6 +8,9 @@
             </div>
 
             <h1 class="text-white">{{ $salao->nome }}</h1>
+            <h5 class="text-white" >{{ $salao->endereco }}</h5>
+            <h6 class="text-white">{{ $salao->telefone }}</h6>
+            <h4 class="text-white">{{ $salao->salaografia }}</h4>
         </div>
 
         <style>
