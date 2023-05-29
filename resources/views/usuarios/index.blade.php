@@ -10,8 +10,7 @@
             <title>Lista de Usuarios</title>
     </head>
     <body>
-        <div class="container">
-            <h1 >Lista de Usuarios</h1>
+        
 
         <div class="container">
             <title >Lista de Usuários </title>
