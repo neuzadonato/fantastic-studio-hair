@@ -1,7 +1,7 @@
 @extends('templates.layout')
 
 @section('conteudo')
-    <section class="ticket-section section-padding">
+<section class="about-section section-padding" id="section_2">
         <div class="section-overlay"></div>
 
         <div class="container">
@@ -11,7 +11,7 @@
                     <form class="custom-form ticket-form mb-5 mb-lg-0" action="{{ route('saloes.store') }}" method="post" role="form" enctype="multipart/form-data">
                         @csrf
 
-                        <h2 class="text-center mb-4">Cadastro</h2>
+                        <h2 class="text-center mb-4">CADASTRO</h2>
 
                         <script>
                             function validarFormulario() {
