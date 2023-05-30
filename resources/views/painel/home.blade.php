@@ -1,13 +1,14 @@
 @extends('templates.layout')
 
 @section('conteudo')
-   <section class="about-section section-padding" id="section_2">
+   <section class="about-section section-padding">
         <div class="section-overlay"></div>
 
         <div class="container">
             <h1 class="text-center text-white "> PAINEL DO ADMINISTRADOR!</h1>
 
             <style>
+
                 .container1 {
                     max-width: 250px;
                     margin: 0 auto;
