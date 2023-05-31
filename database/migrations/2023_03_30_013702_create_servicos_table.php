@@ -15,14 +15,8 @@ return new class extends Migration
     {
         Schema::create('servicos', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-            $table->decimal('valor');
+              $table->string('titulo');
             $table->text('descricao');
-            $table->string('barba');
-            $table->string('cabelo');
-            $table->string('spa');
-            $table->string('manicurepedicure');
-            $table->string('fotos')->nullable()->default('');
             $table->timestamps();
         });
     }

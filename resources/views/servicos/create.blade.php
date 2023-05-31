@@ -27,24 +27,16 @@
 
 
                 <div class="mb-3">
-                    <label class="text-white">Barba</label>
-                    <input type="string" name="barba" class="form-control">
+                    <label class="text-white">titulo</label>
+                    <input type="text" name="titulo" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label class="text-white">Cabelo</label>
-                    <input type="string" name="cabelo" class="form-control">
+                    <label class="text-white">descrição</label>
+                    <input type="text" name="descricao" class="form-control">
                 </div>
 
-                <div class="mb-3">
-                    <label class="text-white">SPA</label>
-                    <input type="string" name="spa" class="form-control">
-                </div>
-
-                <div class="mb-3">
-                    <label class="text-white">Manicure e pédicure</label>
-                    <input type="string" name="manicurepedicure" class="form-control">
-                </div>
+              
                 <div>
                     <input type="submit" value="Salvar servico" class="btn btn-primary">
                 </form>

@@ -24,10 +24,8 @@ public function create()
 public function store(Request $requisicao)
 {
     $servico = new Servico();
-        $servico->barba = $requisicao->barba;
-        $servico->cabelo = $requisicao->cabelo;
-        $servico->spa = $requisicao->spa;
-        $servico->manicurepedicure = $requisicao->manicurepedicure ;
+        $servico->titulo = $requisicao->titulo;
+        $servico->descricao = $requisicao->descricao;
         $servico->save();
         return redirect()->route('servicos.show', $servico->id);
 
@@ -35,7 +33,7 @@ public function store(Request $requisicao)
 public function show(Servico $Servico)
 {
     // Retorna a view gatos.view com o objeto $gato
-    return view('servicos.view', compact('servico'));
+    return view('servicos.view', compact('Servico'));
 }
 
 /**
