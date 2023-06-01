@@ -17,26 +17,14 @@
                 @method('PUT')
 
                 <div class="mb-3">
-                    <label>Barba</label>
-                    <input type="string" name="barba" class="form-control" value="{{ $servico->barba }}">
+                    <label>Titulo</label>
+                    <input type="text" name="descricao" class="form-control" value="{{ $servico->descricao }}">
                 </div>
 
                 <div class="mb-3">
-                    <label>Cabelo</label>
-                    <input type="string" name="cabelo" class="form-control" value="{{ $servico->cabelo }}">
+                    <label>Descrição</label>
+                    <input type="text" name="descricao" class="form-control" value="{{ $servico->descricao }}">
                 </div>
-
-                <div class="mb-3">
-                    <label>SPA</label>
-                    <input type="string" name="spa" class="form-control" value="{{ $servico->spa}}">
-                </div>
-
-                <div class="mb-3">
-                    <label>Manicure e pédicure</label>
-                    <input type="string" name="manicurepedicure" class="form-control" value="{{ $servico->manicurepedicure}}">
-                </div>
-
-
                 <div>
                     <input type="submit" value="Atualizar Servicos" class="btn btn-primary">
                 </div>
