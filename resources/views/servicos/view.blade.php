@@ -24,7 +24,7 @@
             <a class="btn btn-light" href="{{ route('servicos.index') }}">Voltar a lista</a>
             <a class="btn btn-warning" href="{{ route('servicos.edit', $servico->id) }}">Editar</a>
 
-            <form method="POST" action="{{ route('servico.destroy', $servico->id) }}">
+            <form method="POST" action="{{ route('servicos.destroy', $servico->id) }}">
                 @csrf
                 @method('DELETE')
 

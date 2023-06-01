@@ -21,7 +21,7 @@
                         <td>{{ $servico->titulo }}</td>
                         <td>{{ $servico->descrição }}</td>
                         <td>
-                            <a class="link" href="{{ route('servicos.show', $servicos->id) }}">
+                            <a class="link" href="{{ route('servicos.show', $servico->id) }}">
                                 Ver
                             </a>
                         </td>

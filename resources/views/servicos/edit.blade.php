@@ -12,7 +12,7 @@
         <div class="container">
             <h1>Edição dos serviços {{ $servico->id }}</h1>
 
-            <form method="POST" action="{{ route('servicos.update', $servicos->id) }}">
+            <form method="POST" action="{{ route('servicos.update', $servico->id) }}">
                 @csrf
                 @method('PUT')
 
