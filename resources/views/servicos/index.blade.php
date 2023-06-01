@@ -13,6 +13,7 @@
                 <tr class="table-dark">
                     <th>Titulo</th>
                     <th>Descrição</th
+                    <th>ver</th
                 </tr>
 
                 @foreach ($servicos as $servico)
