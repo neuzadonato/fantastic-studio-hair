@@ -12,14 +12,14 @@
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
                     <th>Titulo</th>
-                    <th>Descrição</th
-                    <th>ver</th
+                    <th>Descrição</th>
+
                 </tr>
 
                 @foreach ($servicos as $servico)
                     <tr>
                         <td>{{ $servico->titulo }}</td>
-                        <td>{{ $servico->descricao }}</td>
+                        <td>{{ $servico->descrio }}</td>
                         <td>
                             <a class="link" href="{{ route('servicos.show', $servico->id) }}">
                                 Ver
