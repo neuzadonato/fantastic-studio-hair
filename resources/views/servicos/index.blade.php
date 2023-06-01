@@ -19,7 +19,7 @@
                 @foreach ($servicos as $servico)
                     <tr>
                         <td>{{ $servico->titulo }}</td>
-                        <td>{{ $servico->descrio }}</td>
+                        <td>{{ $servico->descricao }}</td>
                         <td>
                             <a class="link" href="{{ route('servicos.show', $servico->id) }}">
                                 Ver
