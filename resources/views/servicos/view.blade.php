@@ -19,7 +19,7 @@
         <div class="container">
             <h1>{{ $servico->id }} - {{ $servico->titulo }}</h1>
 
-            <h2>{{ $servico->descrição }}</h2>
+            <h2>{{ $servico->descricao }}</h2>
 
             <a class="btn btn-light" href="{{ route('servicos.index') }}">Voltar a lista</a>
             <a class="btn btn-warning" href="{{ route('servicos.edit', $servico->id) }}">Editar</a>
