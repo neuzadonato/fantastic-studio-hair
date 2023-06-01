@@ -1,7 +1,7 @@
 @extends('templates.layout')
 
 @section('conteudo')
-    <section class="ticket-section section-padding">
+    <section class="about-section section-padding" id="section_2">
         <div class="section-overlay"></div>
 
         <div class="container">
@@ -22,10 +22,6 @@
             <form method="POST" action="{{ route('servicos.store') }}">
                 @csrf
 
-
-
-
-
                 <div class="mb-3">
                     <label class="text-white">titulo</label>
                     <input type="text" name="titulo" class="form-control">
@@ -36,7 +32,6 @@
                     <input type="text" name="descricao" class="form-control">
                 </div>
 
-              
                 <div>
                     <input type="submit" value="Salvar servico" class="btn btn-primary">
                 </form>

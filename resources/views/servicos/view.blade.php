@@ -13,18 +13,18 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <title>Serviço #{{ $Servico->id }}</title>
+        <title>Serviço {{ $servico->id }}</title>
     </head>
     <body>
         <div class="container">
-            <h1>{{ $Servico->id }} - {{ $Servico->titulo }}</h1>
+            <h1>{{ $servico->id }} - {{ $servico->titulo }}</h1>
 
-            <h2>{{ $Servico->descrição }}</h2>
-            
+            <h2>{{ $servico->descrição }}</h2>
+
             <a class="btn btn-light" href="{{ route('servicos.index') }}">Voltar a lista</a>
-            <a class="btn btn-warning" href="{{ route('servicos.edit', $Servico->id) }}">Editar</a>
+            <a class="btn btn-warning" href="{{ route('servicos.edit', $servico->id) }}">Editar</a>
 
-            <form method="POST" action="{{ route('servico.destroy', $Servico->id) }}">
+            <form method="POST" action="{{ route('servico.destroy', $servico->id) }}">
                 @csrf
                 @method('DELETE')
 
