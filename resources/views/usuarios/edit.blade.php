@@ -23,7 +23,7 @@
 
                 <div class="mb-3">
                     <label class="text-white">Email: </label>
-                    <input type="number" name="email" class="form-control" value="{{ $usuario->email }}">
+                    <input type="text" name="email" class="form-control" value="{{ $usuario->email }}">
                 </div>
 
                 <div class="mb-3">
