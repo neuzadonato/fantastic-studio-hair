@@ -22,10 +22,6 @@
             <form method="POST" action="{{ route('servicos.store') }}">
                 @csrf
 
-
-
-
-
                 <div class="mb-3">
                     <label class="text-white">titulo</label>
                     <input type="text" name="titulo" class="form-control">

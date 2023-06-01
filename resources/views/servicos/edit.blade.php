@@ -18,7 +18,7 @@
 
                 <div class="mb-3">
                     <label>Titulo</label>
-                    <input type="text" name="descricao" class="form-control" value="{{ $servico->descricao }}">
+                    <input type="text" name="titulo" class="form-control" value="{{ $servico->descricao }}">
                 </div>
 
                 <div class="mb-3">
