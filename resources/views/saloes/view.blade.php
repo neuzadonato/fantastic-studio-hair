@@ -24,6 +24,30 @@
 
                 <input type="submit" value="Excluir Salao" class="btn btn-danger">
             </form>
+
+            <div class="container">
+                <form action="SERVIÇOS"></form>
+                <div class="container1">
+                    <h1>Deixe seu serviço</h1>
+                    <form method="POST" action="{{ route('servicos.store') }}">
+                        @csrf
+                        <input type="hidden" name="salao_id" value="{{ $salao->id }}">
+
+                        <div class="form-group">
+                            <label for="nome">Titulo</label>
+                            <input type="text" name="tiulo" class=form-control placeholder="Digite o serviço">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <textarea name="descricao" rows="4" class=form-control placeholder="Digite a descricao"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Salvar Avaliação" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+
         </div>
 </section>
 @endsection
