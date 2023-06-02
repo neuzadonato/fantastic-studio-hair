@@ -35,7 +35,7 @@
 
                         <div class="form-group">
                             <label for="nome">Titulo</label>
-                            <input type="text" name="tiulo" class=form-control placeholder="Digite o serviço">
+                            <input type="text" name="titulo" class=form-control placeholder="Digite o serviço">
                         </div>
 
                         <div class="form-group">

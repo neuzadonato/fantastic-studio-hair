@@ -24,6 +24,7 @@ class ServicosController extends Controller
         $servico = new Servico();
         $servico->titulo = $requisicao->titulo;
         $servico->descricao = $requisicao->descricao;
+        $servico->salao_id = $requisicao-> salao_id;
         $servico->save();
         return redirect()->route('servicos.show', $servico->id);
     }
