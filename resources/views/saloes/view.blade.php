@@ -43,7 +43,7 @@
                             <textarea name="descricao" rows="4" class=form-control placeholder="Digite a descricao"></textarea>
                         </div>
                         <div>
-                            <input type="submit" value="Salvar Avaliação" class="btn btn-primary">
+                            <input type="submit" value="Salvar" class="btn btn-primary">
                         </div>
                     </form>
                 </div>
