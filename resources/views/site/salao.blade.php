@@ -12,6 +12,10 @@
             <h6 class="text-white">{{ $salao->telefone }}</h6>
             <h4 class="text-white">{{ $salao->salaografia }}</h4>
 
+            @foreach($salao->servicos as $servico)
+                {{$servico->titulo}}
+                {{$servico->descricao}}
+            @endforeach
         </div>
 
         <style>

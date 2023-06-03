@@ -36,4 +36,9 @@ class Salao extends Model
     {
         return $this->hasMany(Avaliacoes::class, 'salao_id');
     }
+
+    public function servicos()
+    {
+        return $this->hasMany(Servico::class, 'salao_id');
+    }
 }

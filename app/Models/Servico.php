@@ -17,6 +17,8 @@ class Servico extends Model
         'descrição'
 
     ];
+
+
 }
 
 
