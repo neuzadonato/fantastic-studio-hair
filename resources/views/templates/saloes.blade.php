@@ -4,6 +4,17 @@
             <div class="col-12">
                 <h1 class="text-white text-center mb-4">NOSSOS SALÕES PARCEIROS</h1>
 
+                <style>
+                    .container1 {
+                        max-width: 360px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        background-color: white;
+                        border-radius: 130px;
+                        margin-top: 50px;
+                    }
+                </style>
+            <div class="container1">
                 <form id="filtro-form">
                     <label for="tipo">Tipos de serviços:</label>
                     <select id="tipo" name="tipo">
@@ -30,7 +41,7 @@
                     </select>
                         <button type="submit">Filtrar</button>
                 </form>
-
+            </div>
                 <div class="row g-3 py-3 text-center justify-content-center">
                     @foreach($saloes as $salao)
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
