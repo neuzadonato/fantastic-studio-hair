@@ -1,7 +1,7 @@
 @extends('templates.layout')
 
         @section('conteudo')
-        <section class="about-section section-padding" id="section_3">
+        <section class="about-section section-padding">
                 <div class="section-overlay"></div>
 
                 <div class="container">
