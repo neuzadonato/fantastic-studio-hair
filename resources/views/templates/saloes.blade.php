@@ -15,31 +15,15 @@
                     }
                 </style>
             <div class="container1">
-                <form id="filtro-form">
-                    <label for="tipo">Tipos de serviços:</label>
-                    <select id="tipo" name="tipo">
-                        <option value="todos">Todos</option>
-                        <option value="corte">Corte</option>
-                        <option value="escova">Escova</option>
-                        <option value="hidratacao">Hidratação</option>
-                        <option value="luzes">Luzes</option>
-                        <option value="progressiva">Progressiva</option>
-                        <option value="selagem">Selagem</option>
-                        <option value="tintura">Tintura</option>
-                        <option value="botox">Botox</option>
-                        <option value="penteado">Penteado</option>
-                        <option value="sobrancelhas">Sobrancelhas</option>
-                        <option value="cilios">Cílios</option>
-                        <option value="barba">Barba</option>
-                        <option value="maquiagem">Maquiagem</option>
-                        <option value="drenagem">Drenagem</option>
-                        <option value="massagem">Massagem</option>
-                        <option value="spa">Spa</option>
-                        <option value="depilacao">Depilação</option>
-                        <option value="manicure">Manicure</option>
-                        <option value="pedicure">Pedicure</option>
-                    </select>
-                        <button type="submit">Filtrar</button>
+                <form action="{{ route('home') }}" method='GET' class="d-flex flex-row gap-3">
+                    @csrf
+
+                    <div>
+                        <label for="tipo">Tipos de serviços:</label>
+                        <input type="text" class="form-control" name="busca">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Buscar</button>
                 </form>
             </div>
                 <div class="row g-3 py-3 text-center justify-content-center">
@@ -56,6 +40,13 @@
                             </a>
                         </div>
                     @endforeach
+
+                    @if(empty($saloes->all()))
+                        <h1 class="my-3 text-white">Não encontramos nenhum salão!</h1>
+                    @endif
+                </div>
+                <div class="d-flex justify-content-center">
+                    {{ $saloes->links() }}
                 </div>
 
             </div>

@@ -93,8 +93,6 @@ Route::get('/saloes', [SaloesController::class, 'index'])->name('saloes.index');
 
 
 
-
-
 // Rotas para o CRUD de gatos
 
 // Rota para a listagem de gatos
