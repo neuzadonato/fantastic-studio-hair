@@ -37,15 +37,15 @@
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="http://127.0.0.1:8000/#section_2" class="site-footer-link">Conheça</a>
+                        <a href="{{ route('home') }}#section_2" class="site-footer-link">Conheça</a>
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="http://127.0.0.1:8000/#section_3" class="site-footer-link">Salões</a>
+                        <a href="{{ route('home') }}#section_3" class="site-footer-link">Salões</a>
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="http://127.0.0.1:8000/servicos#section_4" class="site-footer-link">Serviços</a>
+                        <a href="{{ route('servicos.index') }}#section_4" class="site-footer-link">Serviços</a>
                     </li>
 
                     <li class="site-footer-link-item">
@@ -53,7 +53,7 @@
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="http://127.0.0.1:8000/#section_5" class="site-footer-link">Ajuda</a>
+                        <a href="{{ route('home') }}#section_5" class="site-footer-link">Ajuda</a>
                     </li>
                 </ul>
             </div>

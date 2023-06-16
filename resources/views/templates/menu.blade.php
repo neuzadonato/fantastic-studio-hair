@@ -33,20 +33,20 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/#section_2">Conheça</a>
+                    <a class="nav-link click-scroll" href="{{ route('home') }}#section_2">Conheça</a>
 
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/#section_3">Salões</a>
+                    <a class="nav-link click-scroll" href="{{ route('home') }}#section_3">Salões</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/servicos#section_4">Serviços</a>
+                    <a class="nav-link click-scroll" href="{{ route('servicos.index') }}">Serviços</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="http://127.0.0.1:8000/#section_5">Ajuda</a>
+                    <a class="nav-link click-scroll" href="{{ route('home') }}#section_5">Ajuda</a>
                 </li>
             </ul>
 
