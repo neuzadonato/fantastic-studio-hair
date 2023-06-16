@@ -13,7 +13,7 @@
             <h4 class="text-white">{{ $salao->salaografia }}</h4>
 
 
-            <div class="border rounded text-white p-3">
+            <div class="border rounded text-white p-3 my-5">
                 <h2 class="text-white">Nossos Serviços</h2>
 
                 <ul>

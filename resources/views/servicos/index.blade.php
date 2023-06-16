@@ -7,9 +7,7 @@
                 <div class="container">
                         <h1 class="text-white">Lista de Serviços</h1>
 
-            <a class="btn btn-outline-success my-2" href="{{ route('servicos.create') }}">Novo Serviços</a>
-
-            <table class="table table-hover table-bordered table-primary">
+          <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
                     <th>Titulo</th>
                     <th>Descrição</th>
