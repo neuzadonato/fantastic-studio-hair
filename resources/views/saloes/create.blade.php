@@ -104,6 +104,15 @@
                                 @enderror
                             </div>
 
+                            <div class="col-lg-15 col-md-15 col-12">
+                                <input type="text" name="link" id="link"
+                                    class="form-control" placeholder="Link" required value="{{ old('link') }}">
+
+                                @error('link')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+
                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                 <button type="submit" class="form-control">Salvar</button>
                             </div>

@@ -56,6 +56,7 @@ class SaloesController extends Controller
         $salao->salaografia = $requisicao->salaografia;
         $salao->razao_social = $requisicao->razao_social;
         $salao->email = $requisicao->email;
+        $salao->link = $requisicao->link;
         $salao->usuario_id = Auth::user()->id;
 
         $salao->foto = '';
@@ -113,6 +114,7 @@ class SaloesController extends Controller
         $salao->razao_social = $requisicao->razao_social;
         $salao->salaografia= $requisicao->salaografia;
         $salao->telefone = $requisicao->telefone;
+        $salao->link = $requisicao->link;
 
         $salao->foto = '';
 

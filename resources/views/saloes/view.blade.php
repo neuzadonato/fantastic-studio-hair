@@ -12,6 +12,7 @@
             <h5 class="text-white" >{{ $salao->endereco }}</h5>
             <h6 class="text-white">{{ $salao->telefone }}</h6>
             <h1 class="text-white">{{ $salao->salaografia }}</h1>
+            <h1 class="text-white">{{ $salao->link }}</h1>
             <h2>{{ $salao->senha }}</h2>
             <h3>{{ $salao->confirmar_senha }}</h3>
 

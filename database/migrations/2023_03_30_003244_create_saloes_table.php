@@ -23,6 +23,7 @@ return new class extends Migration
             $table->text('salaografia');
             $table->integer('usuario_id');
             $table->string('foto')->nullable()->default('');
+            $table->string('link', 255);
             $table->timestamps();
         });
     }

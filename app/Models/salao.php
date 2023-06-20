@@ -21,6 +21,7 @@ class Salao extends Model
         'endereco',
         'telefone',
         'salaografia',
+        'link',
         'foto',
         'senha',
         'confirmar_senha',

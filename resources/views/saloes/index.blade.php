@@ -30,6 +30,7 @@
                                     <td>{{ $salao->endereco }}</td>
                                     <td>{{ $salao->telefone }}</td>
                                     <td>{{ $salao->salaografia }}</td>
+                                    <td>{{ $salao->link}}</td>
                                     <td>
                                         <a class="link" href="{{ route('saloes.show', $salao->id) }}">
                                             Ver

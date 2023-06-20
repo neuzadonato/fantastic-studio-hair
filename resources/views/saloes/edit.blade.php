@@ -51,6 +51,12 @@
                     <input type="text" name="salaografia" class="form-control" value="{{ $salao->salaografia }}">
                 </div>
 
+
+                <div class="mb-3">
+                    <label>Link</label>
+                    <input type="text" name="link" class="form-control" value="{{ $salao->link }}">
+                </div>
+
                 <div>
                     <input type="submit" value="Atualizar Salao" class="btn btn-primary">
                 </div>
